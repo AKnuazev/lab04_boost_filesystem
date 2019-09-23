@@ -1,0 +1,1 @@
+/usr/bin/c++   -pedantic -Werror -Wall -Wextra -Wno-unused-command-line-argument -Wshadow -Wnon-virtual-dtor   CMakeFiles/tests.dir/tests/test.cpp.o CMakeFiles/tests.dir/sources/json.cpp.o  -o tests -lpthread libjson.a /home/anton/.hunter/_Base/70287b1/169c9bc/b8f46c4/Install/lib/libgtest.a /home/anton/.hunter/_Base/70287b1/169c9bc/b8f46c4/Install/lib/libgtest_main.a 

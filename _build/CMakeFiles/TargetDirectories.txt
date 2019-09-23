@@ -1,0 +1,5 @@
+/home/anton/AKnuazev/labs/lab01/_build/CMakeFiles/edit_cache.dir
+/home/anton/AKnuazev/labs/lab01/_build/CMakeFiles/test.dir
+/home/anton/AKnuazev/labs/lab01/_build/CMakeFiles/json.dir
+/home/anton/AKnuazev/labs/lab01/_build/CMakeFiles/rebuild_cache.dir
+/home/anton/AKnuazev/labs/lab01/_build/CMakeFiles/tests.dir

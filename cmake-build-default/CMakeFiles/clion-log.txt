@@ -1,0 +1,10 @@
+/opt/clion-2019.2.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE= -G "CodeBlocks - Unix Makefiles" /home/anton/AKnuazev/labs/lab01
+-- [hunter] Calculating Toolchain-SHA1
+-- [hunter] Calculating Config-SHA1
+-- [hunter] HUNTER_ROOT: /home/anton/.hunter
+-- [hunter] [ Hunter-ID: 70287b1 | Toolchain-ID: 169c9bc | Config-ID: b8f46c4 ]
+-- [hunter] GTEST_ROOT: /home/anton/.hunter/_Base/70287b1/169c9bc/b8f46c4/Install (ver.: 1.8.1)
+-- [hunter] NLOHMANN_JSON_ROOT: /home/anton/.hunter/_Base/70287b1/169c9bc/b8f46c4/Install (ver.: 3.3.0)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/anton/AKnuazev/labs/lab01/cmake-build-default

@@ -83,3 +83,12 @@ if(BUILD_COVERAGE)
   list(APPEND LCOV_REMOVE_PATTERNS "'${PROJECT_SOURCE_DIR}/tests/*'")
   coverage_evaluate()
 endif()
+add_library(Json STATIC sources/json.cpp)
+add_executable(main sources/main.cpp)
+add_executable(task3 sources/task3.cpp)
+target_link_libraries(main Json)
+
+hunter_add_package(nlohmann_json)
+find_package(nlohmann_json CONFIG REQUIRED)
+
+target_link_libraries(task3 PUBLIC nlohmann_json::nlohmann_json)

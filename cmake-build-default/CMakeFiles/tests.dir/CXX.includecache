@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/json.h
+string
+-
+any
+-
+unordered_map
+-
+unordered_set
+-
+vector
+-
+
+/home/anton/AKnuazev/labs/lab01/sources/json.cpp
+json.h
+/home/anton/AKnuazev/labs/lab01/sources/json.h
+fstream
+-
+exception
+-
+cmath
+-
+

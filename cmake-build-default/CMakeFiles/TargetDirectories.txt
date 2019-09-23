@@ -1,0 +1,8 @@
+/home/anton/AKnuazev/labs/lab01/cmake-build-default/CMakeFiles/rebuild_cache.dir
+/home/anton/AKnuazev/labs/lab01/cmake-build-default/CMakeFiles/edit_cache.dir
+/home/anton/AKnuazev/labs/lab01/cmake-build-default/CMakeFiles/tests.dir
+/home/anton/AKnuazev/labs/lab01/cmake-build-default/CMakeFiles/task3.dir
+/home/anton/AKnuazev/labs/lab01/cmake-build-default/CMakeFiles/json.dir
+/home/anton/AKnuazev/labs/lab01/cmake-build-default/CMakeFiles/main.dir
+/home/anton/AKnuazev/labs/lab01/cmake-build-default/CMakeFiles/Json.dir
+/home/anton/AKnuazev/labs/lab01/cmake-build-default/CMakeFiles/test.dir
