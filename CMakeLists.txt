@@ -41,18 +41,6 @@ add_executable(tests
   ${CMAKE_CURRENT_SOURCE_DIR}/sources/json.cpp
 )
 
-find_library(
-    GTEST_LOCAL_LIB
-    NAMES gtest
-    PATHS ${GTEST_ROOT}/lib
-)
-
-find_library(
-    GTEST_LOCAL_LIB_MAIN
-    NAMES gtest_main
-    PATHS ${GTEST_ROOT}/lib
-)
-
 target_include_directories(json 
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
@@ -66,8 +54,8 @@ target_include_directories(tests
 target_link_libraries(tests 
     pthread
     ${PROJECT_NAME}
-    ${GTEST_LOCAL_LIB}
-    ${GTEST_LOCAL_LIB_MAIN}
+        GTest::gtest
+        GTest::main
     )
 
 enable_testing()

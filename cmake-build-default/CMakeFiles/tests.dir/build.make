@@ -95,8 +95,7 @@ tests: CMakeFiles/tests.dir/tests/test.cpp.o
 tests: CMakeFiles/tests.dir/sources/json.cpp.o
 tests: CMakeFiles/tests.dir/build.make
 tests: libjson.a
-tests: /home/anton/.hunter/_Base/70287b1/169c9bc/b8f46c4/Install/lib/libgtest.a
-tests: /home/anton/.hunter/_Base/70287b1/169c9bc/b8f46c4/Install/lib/libgtest_main.a
+tests: /home/anton/.hunter/_Base/70287b1/169c9bc/b8f46c4/Install/lib/libgtestd.a
 tests: CMakeFiles/tests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anton/AKnuazev/labs/lab01/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable tests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tests.dir/link.txt --verbose=$(VERBOSE)
