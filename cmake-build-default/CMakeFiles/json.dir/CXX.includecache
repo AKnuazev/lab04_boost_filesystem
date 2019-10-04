@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-../include/json.h
+/home/anton/AKnuazev/labs/lab01/include/json.h
 string
 -
 any
@@ -19,12 +19,12 @@ vector
 -
 
 /home/anton/AKnuazev/labs/lab01/sources/json.cpp
-json.h
-/home/anton/AKnuazev/labs/lab01/sources/json.h
+../include/json.h
+/home/anton/AKnuazev/labs/lab01/include/json.h
+iostream
+-
 fstream
 -
 exception
--
-cmath
 -
 

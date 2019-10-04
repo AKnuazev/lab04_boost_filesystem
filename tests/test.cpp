@@ -20,5 +20,4 @@ TEST(Json,WorkTest)
     auto address = std::any_cast<Json>(object["address"]);
     EXPECT_EQ(std::any_cast<std::string>(address["city"]), "Moscow");
     EXPECT_EQ(std::any_cast<std::string>(address["street"]), "Vozdvijenka");
-
 }

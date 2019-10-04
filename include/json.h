@@ -19,8 +19,10 @@ class Json {
 public:
 
     // Конструктор из строки, содержащей Json-данные.
-
     Json(const std::string &s);
+    
+    // Конструктор из строки, содержащей вектор токенов
+    Json(const std::vector<std::any>& tokens);
 
 
 
