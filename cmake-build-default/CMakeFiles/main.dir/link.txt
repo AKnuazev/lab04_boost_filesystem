@@ -1,1 +1,1 @@
-/usr/bin/c++   -pedantic -Werror -Wall -Wextra -Wno-unused-command-line-argument -Wshadow -Wnon-virtual-dtor   CMakeFiles/main.dir/sources/main.cpp.o  -o main libSharedPtr.a 
+/usr/bin/c++   -pedantic -Werror -Wall -Wextra -Wno-unused-command-line-argument -Wshadow -Wnon-virtual-dtor   CMakeFiles/main.dir/sources/main.cpp.o  -o main libsharedPtr.a 

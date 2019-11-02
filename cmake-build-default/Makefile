@@ -67,17 +67,6 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/opt/clion-2019.2.2/bin/cmake/linux/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -88,6 +77,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/opt/clion-2019.2.2/bin/cmake/linux/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -148,6 +148,19 @@ SharedPtr/fast:
 .PHONY : SharedPtr/fast
 
 #=============================================================================
+# Target rules for targets named sharedPtr
+
+# Build rule for target.
+sharedPtr: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sharedPtr
+.PHONY : sharedPtr
+
+# fast build rule for target.
+sharedPtr/fast:
+	$(MAKE) -f CMakeFiles/sharedPtr.dir/build.make CMakeFiles/sharedPtr.dir/build
+.PHONY : sharedPtr/fast
+
+#=============================================================================
 # Target rules for targets named main
 
 # Build rule for target.
@@ -168,6 +181,7 @@ sources/SharedPtr.o: sources/SharedPtr.cpp.o
 sources/SharedPtr.cpp.o:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/sources/SharedPtr.cpp.o
 	$(MAKE) -f CMakeFiles/SharedPtr.dir/build.make CMakeFiles/SharedPtr.dir/sources/SharedPtr.cpp.o
+	$(MAKE) -f CMakeFiles/sharedPtr.dir/build.make CMakeFiles/sharedPtr.dir/sources/SharedPtr.cpp.o
 .PHONY : sources/SharedPtr.cpp.o
 
 sources/SharedPtr.i: sources/SharedPtr.cpp.i
@@ -178,6 +192,7 @@ sources/SharedPtr.i: sources/SharedPtr.cpp.i
 sources/SharedPtr.cpp.i:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/sources/SharedPtr.cpp.i
 	$(MAKE) -f CMakeFiles/SharedPtr.dir/build.make CMakeFiles/SharedPtr.dir/sources/SharedPtr.cpp.i
+	$(MAKE) -f CMakeFiles/sharedPtr.dir/build.make CMakeFiles/sharedPtr.dir/sources/SharedPtr.cpp.i
 .PHONY : sources/SharedPtr.cpp.i
 
 sources/SharedPtr.s: sources/SharedPtr.cpp.s
@@ -188,6 +203,7 @@ sources/SharedPtr.s: sources/SharedPtr.cpp.s
 sources/SharedPtr.cpp.s:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/sources/SharedPtr.cpp.s
 	$(MAKE) -f CMakeFiles/SharedPtr.dir/build.make CMakeFiles/SharedPtr.dir/sources/SharedPtr.cpp.s
+	$(MAKE) -f CMakeFiles/sharedPtr.dir/build.make CMakeFiles/sharedPtr.dir/sources/SharedPtr.cpp.s
 .PHONY : sources/SharedPtr.cpp.s
 
 sources/main.o: sources/main.cpp.o
@@ -251,11 +267,12 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... test"
 	@echo "... tests"
 	@echo "... SharedPtr"
-	@echo "... edit_cache"
+	@echo "... sharedPtr"
 	@echo "... main"
+	@echo "... edit_cache"
+	@echo "... test"
 	@echo "... sources/SharedPtr.o"
 	@echo "... sources/SharedPtr.i"
 	@echo "... sources/SharedPtr.s"

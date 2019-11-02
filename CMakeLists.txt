@@ -1,9 +1,9 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.4)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-option(BUILD_COVERAGE "Build coverage" ON)
+option(BUILD_COVERAGE "Build coverage" OFF)
 
 set(
         HUNTER_CACHE_SERVERS
@@ -24,13 +24,16 @@ string(APPEND CMAKE_CXX_FLAGS " -pedantic -Werror -Wall -Wextra")
 string(APPEND CMAKE_CXX_FLAGS " -Wno-unused-command-line-argument")
 string(APPEND CMAKE_CXX_FLAGS " -Wshadow -Wnon-virtual-dtor")
 
-add_library(${PROJECT_NAME} STATIC sources/SharedPtr.cpp)
-add_executable(main sources/main.cpp)
-target_link_libraries(main ${PROJECT_NAME})
-
 hunter_add_package(GTest)
 find_package(GTest CONFIG REQUIRED)
 
+
+add_library(${PROJECT_NAME} STATIC
+        # enum your files and delete this comment
+        ${CMAKE_CURRENT_SOURCE_DIR}/sources/SharedPtr.cpp
+        #   json.h
+        #   ${CMAKE_CURRENT_SOURCE_DIR}/sources/source.cpp
+        )
 add_executable(tests
         # TODO: enum your files and delete this comment
         ${CMAKE_CURRENT_SOURCE_DIR}/tests/test.cpp
@@ -38,22 +41,33 @@ add_executable(tests
         ${CMAKE_CURRENT_SOURCE_DIR}/sources/SharedPtr.cpp
         )
 
+#find_library(
+#    GTEST_LOCAL_LIB
+#    NAMES gtest
+#    PATHS ${GTEST_ROOT}/lib
+#)
+
+#find_library(
+#    GTEST_LOCAL_LIB_MAIN
+#    NAMES gtest_main
+#    PATHS ${GTEST_ROOT}/lib
+#)
+
+target_include_directories(SharedPtr
+        PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
+        )
 target_include_directories(tests
         PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
         ${GTEST_ROOT}/include
         )
 
-#find_library(#
-#        GTEST_LOCAL_LIB
-#        NAMES gtest
-#        PATHS ${GTEST_ROOT}/lib
-#        )
+# target_link_libraries(tests GTest::main json)
 
 target_link_libraries(tests
         pthread
         ${PROJECT_NAME}
-        #${GTEST_LOCAL_LIB}#
-        #${GTEST_LOCAL_LIB_MAIN}#
+        #    ${GTEST_LOCAL_LIB}
+        #    ${GTEST_LOCAL_LIB_MAIN}
         GTest::gtest
         GTest::main
         )
@@ -71,5 +85,8 @@ if(BUILD_COVERAGE)
     list(APPEND LCOV_REMOVE_PATTERNS "'${PROJECT_SOURCE_DIR}/tests/*'")
     coverage_evaluate()
 endif()
+add_library(sharedPtr STATIC sources/SharedPtr.cpp)
+add_executable(main sources/main.cpp)
+target_link_libraries(main sharedPtr)
 
 
