@@ -43,19 +43,19 @@ target_include_directories(tests
         ${GTEST_ROOT}/include
         )
 
-find_library(#
-        GTEST_LOCAL_LIB
-        NAMES gtest
-        PATHS ${GTEST_ROOT}/lib
-        )
+#find_library(#
+#        GTEST_LOCAL_LIB
+#        NAMES gtest
+#        PATHS ${GTEST_ROOT}/lib
+#        )
 
 target_link_libraries(tests
         pthread
         ${PROJECT_NAME}
-        ${GTEST_LOCAL_LIB}#
-        ${GTEST_LOCAL_LIB_MAIN}#
-        #GTest::gtest
-        #GTest::main
+        #${GTEST_LOCAL_LIB}#
+        #${GTEST_LOCAL_LIB_MAIN}#
+        GTest::gtest
+        GTest::main
         )
 
 enable_testing()

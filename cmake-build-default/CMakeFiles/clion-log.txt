@@ -5,5 +5,11 @@
 -- [hunter] [ Hunter-ID: 70287b1 | Toolchain-ID: 169c9bc | Config-ID: b8f46c4 ]
 -- [hunter] GTEST_ROOT: /home/anton/.hunter/_Base/70287b1/169c9bc/b8f46c4/Install (ver.: 1.8.1)
 -- Configuring done
+CMake Error at CMakeLists.txt:34 (add_executable):
+  Target "tests" links to target "GTest::main" but the target was not found.
+  Perhaps a find_package() call is missing for an IMPORTED target, or an
+  ALIAS target is missing?
+
+
 -- Generating done
 -- Build files have been written to: /home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default
