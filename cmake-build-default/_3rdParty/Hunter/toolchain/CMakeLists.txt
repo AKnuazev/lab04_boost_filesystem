@@ -6,8 +6,8 @@ if(NOT HUNTER_SELF)
   message("[hunter ** INTERNAL **] HUNTER_SELF is empty")
   message("[hunter ** INTERNAL **] [Directory:${CMAKE_CURRENT_LIST_DIR}]")
   message("")
-  message("------------------------------ ERROR ------------------------------")
-  message("    https://docs.hunter.sh/en/latest/reference/errors/error.internal.html")
+  message("------------------------------ WIKI -------------------------------")
+  message("    https://github.com/ruslo/hunter/wiki/error.internal")
   message("-------------------------------------------------------------------")
   message(FATAL_ERROR "")
 endif()
@@ -114,7 +114,7 @@ endfunction()
 
 split_string("${outresult}" list_of_strings)
 
-set(macros_list "")
+set(macroses "")
 foreach(x ${list_of_strings})
   string(
       REGEX
@@ -132,22 +132,13 @@ foreach(x ${list_of_strings})
         result_x
         "${x}"
     )
-
-    string(FIND "${result_x}" ";" semicolon_pos)
-    if(NOT semicolon_pos EQUAL "-1")
-      hunter_internal_error("Semicolon in string: '${result_x}'")
-    endif()
-
-    list(APPEND macros_list "${result_x}")
+    set(macroses "${macroses}${result_x}\n")
   endif()
 endforeach()
 
-list(REMOVE_DUPLICATES macros_list)
-string(REPLACE ";" "\n" macros_string "${macros_list}")
-
-string(COMPARE EQUAL "${macros_string}" "" is_empty)
+string(COMPARE EQUAL "${macroses}" "" is_empty)
 if(is_empty)
-  hunter_fatal_error("No toolchain info generated" ERROR_PAGE error.no.toolchain.info)
+  hunter_fatal_error("No toolchain info generated" WIKI error.no.toolchain.info)
 endif()
 
-file(APPEND "${TOOLCHAIN_INFO_FILE}" "Predefined macroses:\n${macros_string}")
+file(APPEND "${TOOLCHAIN_INFO_FILE}" "Predefined macroses:\n${macroses}")

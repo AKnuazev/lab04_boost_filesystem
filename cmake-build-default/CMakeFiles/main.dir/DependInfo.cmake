@@ -14,7 +14,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles/sharedPtr.dir/DependInfo.cmake"
+  "/home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles/SharedPtr.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

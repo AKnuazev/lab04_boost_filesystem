@@ -94,7 +94,7 @@ tests_EXTERNAL_OBJECTS =
 tests: CMakeFiles/tests.dir/tests/test.cpp.o
 tests: CMakeFiles/tests.dir/sources/SharedPtr.cpp.o
 tests: CMakeFiles/tests.dir/build.make
-tests: libSharedPtr.a
+tests: libsharedPtr.a
 tests: /home/anton/.hunter/_Base/70287b1/169c9bc/b8f46c4/Install/lib/libgtestd.a
 tests: CMakeFiles/tests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable tests"

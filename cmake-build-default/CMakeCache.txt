@@ -153,7 +153,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=SharedPtr
+CMAKE_PROJECT_NAME:STATIC=sharedPtr
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -215,10 +215,25 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Path to a library.
+GTEST_LIBRARY:FILEPATH=/home/anton/.hunter/_Base/70287b1/169c9bc/b8f46c4/Install/lib/libgtest.a
+
+//Path to a library.
+GTEST_LIBRARY_DEBUG:FILEPATH=/home/anton/.hunter/_Base/70287b1/169c9bc/b8f46c4/Install/lib/libgtestd.a
+
+//Path to a library.
 GTEST_LOCAL_LIB:FILEPATH=/home/anton/.hunter/_Base/70287b1/169c9bc/b8f46c4/Install/lib/libgtest.a
 
 //Path to a library.
 GTEST_LOCAL_LIB_MAIN:FILEPATH=/home/anton/.hunter/_Base/70287b1/169c9bc/b8f46c4/Install/lib/libgtest_main.a
+
+//Path to a library.
+GTEST_MAIN_LIBRARY:FILEPATH=/home/anton/.hunter/_Base/70287b1/169c9bc/b8f46c4/Install/lib/libgtest_main.a
+
+//Path to a library.
+GTEST_MAIN_LIBRARY_DEBUG:FILEPATH=/home/anton/.hunter/_Base/70287b1/169c9bc/b8f46c4/Install/lib/libgtest_maind.a
+
+//The directory containing a CMake configuration file for GTest.
+GTest_DIR:PATH=/home/anton/.hunter/_Base/70287b1/169c9bc/b8f46c4/Install/lib/cmake/GTest
 
 //Default cache server
 HUNTER_CACHE_SERVERS:STRING=https://github.com/bmstu-iu8-cpp-sem-3/hunter-cache
@@ -261,6 +276,12 @@ json_BINARY_DIR:STATIC=/home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-de
 
 //Value Computed by CMake
 json_SOURCE_DIR:STATIC=/home/anton/AKnuazev/labs/lab03_shared_ptr
+
+//Value Computed by CMake
+sharedPtr_BINARY_DIR:STATIC=/home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default
+
+//Value Computed by CMake
+sharedPtr_SOURCE_DIR:STATIC=/home/anton/AKnuazev/labs/lab03_shared_ptr
 
 
 ########################
@@ -418,18 +439,28 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding GTest
+FIND_PACKAGE_MESSAGE_DETAILS_GTest:INTERNAL=[/home/anton/.hunter/_Base/70287b1/169c9bc/b8f46c4/Install/lib/libgtest.a][/home/anton/.hunter/_Base/70287b1/169c9bc/b8f46c4/Install/include][/home/anton/.hunter/_Base/70287b1/169c9bc/b8f46c4/Install/lib/libgtest_main.a][v()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Details about finding nlohmann_json
 FIND_PACKAGE_MESSAGE_DETAILS_nlohmann_json:INTERNAL=[/home/anton/.hunter/_Base/70287b1/169c9bc/b8f46c4/Install/lib/cmake/nlohmann_json/nlohmann_jsonConfig.cmake][v3.3.0()]
+//ADVANCED property for variable: GTEST_LIBRARY
+GTEST_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GTEST_LIBRARY_DEBUG
+GTEST_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GTEST_MAIN_LIBRARY
+GTEST_MAIN_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GTEST_MAIN_LIBRARY_DEBUG
+GTEST_MAIN_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 HUNTER_CACHED_BUILD_SHARED_LIBS:INTERNAL=
 HUNTER_CACHED_CONFIGURATION_TYPES:INTERNAL=Release;Debug
 HUNTER_CACHED_ROOT:INTERNAL=/home/anton/.hunter
-HUNTER_CONFIG_SHA1:INTERNAL=48401e91ef616412f60c581f51bc87c769b0930f
-HUNTER_SHA1:INTERNAL=9a3594a61227967fb92159339ba326701b287b19
+HUNTER_CONFIG_SHA1:INTERNAL=b8f46c48b86f2b8750955a271cc78e742dce9d0e
+HUNTER_SHA1:INTERNAL=70287b1ffa810ee4e952052a9adff9b4856d0d54
 HUNTER_TOOLCHAIN_SHA1:INTERNAL=169c9bc1baa4e29b6b896c00ce7d52a61c181f39
-HUNTER_URL:INTERNAL=https://github.com/cpp-pm/hunter/archive/v0.23.218.tar.gz
-HUNTER_VERSION:INTERNAL=0.23.218
+HUNTER_URL:INTERNAL=https://github.com/ruslo/hunter/archive/v0.23.34.tar.gz
+HUNTER_VERSION:INTERNAL=0.23.34
 //ADVANCED property for variable: ProcessorCount_cmd_getconf
 ProcessorCount_cmd_getconf-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ProcessorCount_cmd_sysctl
