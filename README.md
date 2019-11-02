@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/AKnuazev/lab03_shared_ptr.svg?branch=master)](https://travis-ci.org/AKnuazev/lab03_shared_ptr)
 # Лабораторная работа №3
 
 #### Задание
