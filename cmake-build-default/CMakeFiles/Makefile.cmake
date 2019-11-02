@@ -12,9 +12,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/anton/.hunter/_Base/70287b1/169c9bc/b8f46c4/Install/lib/cmake/GTest/GTestTargets-debug.cmake"
   "/home/anton/.hunter/_Base/70287b1/169c9bc/b8f46c4/Install/lib/cmake/GTest/GTestTargets-release.cmake"
   "/home/anton/.hunter/_Base/70287b1/169c9bc/b8f46c4/Install/lib/cmake/GTest/GTestTargets.cmake"
-  "/home/anton/.hunter/_Base/70287b1/169c9bc/b8f46c4/Install/lib/cmake/nlohmann_json/nlohmann_jsonConfig.cmake"
-  "/home/anton/.hunter/_Base/70287b1/169c9bc/b8f46c4/Install/lib/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake"
-  "/home/anton/.hunter/_Base/70287b1/169c9bc/b8f46c4/Install/lib/cmake/nlohmann_json/nlohmann_jsonTargets.cmake"
   "/home/anton/.hunter/_Base/70287b1/169c9bc/b8f46c4/config.cmake"
   "/home/anton/.hunter/_Base/Download/Hunter/0.23.34/70287b1/Unpacked/cmake/Hunter"
   "/home/anton/.hunter/_Base/Download/Hunter/0.23.34/70287b1/Unpacked/cmake/configs/default.cmake"
@@ -80,7 +77,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/anton/.hunter/_Base/Download/Hunter/0.23.34/70287b1/Unpacked/cmake/modules/hunter_private_data_password.cmake"
   "/home/anton/.hunter/_Base/Download/Hunter/0.23.34/70287b1/Unpacked/cmake/modules/hunter_read_http_credentials.cmake"
   "/home/anton/.hunter/_Base/Download/Hunter/0.23.34/70287b1/Unpacked/cmake/modules/hunter_register_dependency.cmake"
-  "/home/anton/.hunter/_Base/Download/Hunter/0.23.34/70287b1/Unpacked/cmake/modules/hunter_report_broken_package.cmake"
   "/home/anton/.hunter/_Base/Download/Hunter/0.23.34/70287b1/Unpacked/cmake/modules/hunter_sanity_checks.cmake"
   "/home/anton/.hunter/_Base/Download/Hunter/0.23.34/70287b1/Unpacked/cmake/modules/hunter_save_to_cache.cmake"
   "/home/anton/.hunter/_Base/Download/Hunter/0.23.34/70287b1/Unpacked/cmake/modules/hunter_set_config_location.cmake"
@@ -97,7 +93,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/anton/.hunter/_Base/Download/Hunter/0.23.34/70287b1/Unpacked/cmake/modules/hunter_user_error.cmake"
   "/home/anton/.hunter/_Base/Download/Hunter/0.23.34/70287b1/Unpacked/cmake/modules/hunter_wiki.cmake"
   "/home/anton/.hunter/_Base/Download/Hunter/0.23.34/70287b1/Unpacked/cmake/projects/GTest/hunter.cmake"
-  "/home/anton/.hunter/_Base/Download/Hunter/0.23.34/70287b1/Unpacked/cmake/projects/nlohmann_json/hunter.cmake"
   "/home/anton/.hunter/_Base/Download/Hunter/0.23.34/70287b1/Unpacked/scripts/create-toolchain-info.cmake"
   "../CMakeLists.txt"
   "CMakeFiles/3.14.5/CMakeCCompiler.cmake"
@@ -155,8 +150,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/tests.dir/DependInfo.cmake"
-  "CMakeFiles/task3.dir/DependInfo.cmake"
-  "CMakeFiles/json.dir/DependInfo.cmake"
+  "CMakeFiles/SharedPtr.dir/DependInfo.cmake"
   "CMakeFiles/main.dir/DependInfo.cmake"
-  "CMakeFiles/Json.dir/DependInfo.cmake"
   )

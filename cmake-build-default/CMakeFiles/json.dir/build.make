@@ -43,10 +43,10 @@ RM = /opt/clion-2019.2.2/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anton/AKnuazev/labs/lab01
+CMAKE_SOURCE_DIR = /home/anton/AKnuazev/labs/lab03_shared_ptr
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anton/AKnuazev/labs/lab01/cmake-build-default
+CMAKE_BINARY_DIR = /home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default
 
 # Include any dependencies generated for this target.
 include CMakeFiles/json.dir/depend.make
@@ -59,28 +59,43 @@ include CMakeFiles/json.dir/flags.make
 
 CMakeFiles/json.dir/sources/json.cpp.o: CMakeFiles/json.dir/flags.make
 CMakeFiles/json.dir/sources/json.cpp.o: ../sources/json.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anton/AKnuazev/labs/lab01/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/json.dir/sources/json.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/json.dir/sources/json.cpp.o -c /home/anton/AKnuazev/labs/lab01/sources/json.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/json.dir/sources/json.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/json.dir/sources/json.cpp.o -c /home/anton/AKnuazev/labs/lab03_shared_ptr/sources/json.cpp
 
 CMakeFiles/json.dir/sources/json.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/json.dir/sources/json.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anton/AKnuazev/labs/lab01/sources/json.cpp > CMakeFiles/json.dir/sources/json.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anton/AKnuazev/labs/lab03_shared_ptr/sources/json.cpp > CMakeFiles/json.dir/sources/json.cpp.i
 
 CMakeFiles/json.dir/sources/json.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/json.dir/sources/json.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anton/AKnuazev/labs/lab01/sources/json.cpp -o CMakeFiles/json.dir/sources/json.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anton/AKnuazev/labs/lab03_shared_ptr/sources/json.cpp -o CMakeFiles/json.dir/sources/json.cpp.s
+
+CMakeFiles/json.dir/sources/SharedPtr.cpp.o: CMakeFiles/json.dir/flags.make
+CMakeFiles/json.dir/sources/SharedPtr.cpp.o: ../sources/SharedPtr.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/json.dir/sources/SharedPtr.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/json.dir/sources/SharedPtr.cpp.o -c /home/anton/AKnuazev/labs/lab03_shared_ptr/sources/SharedPtr.cpp
+
+CMakeFiles/json.dir/sources/SharedPtr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/json.dir/sources/SharedPtr.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anton/AKnuazev/labs/lab03_shared_ptr/sources/SharedPtr.cpp > CMakeFiles/json.dir/sources/SharedPtr.cpp.i
+
+CMakeFiles/json.dir/sources/SharedPtr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/json.dir/sources/SharedPtr.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anton/AKnuazev/labs/lab03_shared_ptr/sources/SharedPtr.cpp -o CMakeFiles/json.dir/sources/SharedPtr.cpp.s
 
 # Object files for target json
 json_OBJECTS = \
-"CMakeFiles/json.dir/sources/json.cpp.o"
+"CMakeFiles/json.dir/sources/json.cpp.o" \
+"CMakeFiles/json.dir/sources/SharedPtr.cpp.o"
 
 # External object files for target json
 json_EXTERNAL_OBJECTS =
 
 libjson.a: CMakeFiles/json.dir/sources/json.cpp.o
+libjson.a: CMakeFiles/json.dir/sources/SharedPtr.cpp.o
 libjson.a: CMakeFiles/json.dir/build.make
 libjson.a: CMakeFiles/json.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anton/AKnuazev/labs/lab01/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libjson.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libjson.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/json.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/json.dir/link.txt --verbose=$(VERBOSE)
 
@@ -94,6 +109,6 @@ CMakeFiles/json.dir/clean:
 .PHONY : CMakeFiles/json.dir/clean
 
 CMakeFiles/json.dir/depend:
-	cd /home/anton/AKnuazev/labs/lab01/cmake-build-default && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anton/AKnuazev/labs/lab01 /home/anton/AKnuazev/labs/lab01 /home/anton/AKnuazev/labs/lab01/cmake-build-default /home/anton/AKnuazev/labs/lab01/cmake-build-default /home/anton/AKnuazev/labs/lab01/cmake-build-default/CMakeFiles/json.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anton/AKnuazev/labs/lab03_shared_ptr /home/anton/AKnuazev/labs/lab03_shared_ptr /home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default /home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default /home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles/json.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/json.dir/depend
 

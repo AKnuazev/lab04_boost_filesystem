@@ -6,18 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../include/json.h
-string
--
-any
--
-unordered_map
--
-unordered_set
--
-vector
--
-
 /home/anton/.hunter/_Base/70287b1/169c9bc/b8f46c4/Install/include/gtest/gtest-death-test.h
 gtest/internal/gtest-death-test-internal.h
 /home/anton/.hunter/_Base/70287b1/169c9bc/b8f46c4/Install/include/gtest/gtest/internal/gtest-death-test-internal.h
@@ -298,31 +286,15 @@ cxxabi.h
 acxx_demangle.h
 -
 
-/home/anton/AKnuazev/labs/lab01/include/json.h
-string
+/home/anton/AKnuazev/labs/lab03_shared_ptr/include/SharedPtr.h
+atomic
 -
-any
--
-unordered_map
--
-unordered_set
--
-vector
+cstdio
 -
 
-/home/anton/AKnuazev/labs/lab01/sources/json.cpp
-../include/json.h
-/home/anton/AKnuazev/labs/lab01/include/json.h
-iostream
--
-fstream
--
-exception
--
-
-/home/anton/AKnuazev/labs/lab01/tests/test.cpp
+/home/anton/AKnuazev/labs/lab03_shared_ptr/tests/test.cpp
 gtest/gtest.h
 -
-json.h
--
+../include/SharedPtr.h
+/home/anton/AKnuazev/labs/lab03_shared_ptr/include/SharedPtr.h
 

@@ -12,15 +12,7 @@ atomic
 cstdio
 -
 
-/home/anton/AKnuazev/labs/lab03_shared_ptr/sources/main.cpp
-iostream
--
-fstream
--
-any
--
-ctime
--
+/home/anton/AKnuazev/labs/lab03_shared_ptr/sources/SharedPtr.cpp
 ../include/SharedPtr.h
 /home/anton/AKnuazev/labs/lab03_shared_ptr/include/SharedPtr.h
 

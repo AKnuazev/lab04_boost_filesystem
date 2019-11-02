@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/anton/AKnuazev/labs/lab01/sources/json.cpp" "/home/anton/AKnuazev/labs/lab01/cmake-build-default/CMakeFiles/Json.dir/sources/json.cpp.o"
+  "/home/anton/AKnuazev/labs/lab03_shared_ptr/sources/json.cpp" "/home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles/Json.dir/sources/json.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

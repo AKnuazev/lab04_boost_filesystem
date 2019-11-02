@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/anton/AKnuazev/labs/lab01/include/json.h
+/home/anton/AKnuazev/labs/lab03_shared_ptr/include/json.h
 string
 -
 any
@@ -18,9 +18,9 @@ unordered_set
 vector
 -
 
-/home/anton/AKnuazev/labs/lab01/sources/json.cpp
+/home/anton/AKnuazev/labs/lab03_shared_ptr/sources/json.cpp
 ../include/json.h
-/home/anton/AKnuazev/labs/lab01/include/json.h
+/home/anton/AKnuazev/labs/lab03_shared_ptr/include/json.h
 iostream
 -
 fstream

@@ -59,10 +59,10 @@ RM = /opt/clion-2019.2.2/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anton/AKnuazev/labs/lab01/cmake-build-default/_3rdParty/Hunter/toolchain
+CMAKE_SOURCE_DIR = /home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/_3rdParty/Hunter/toolchain
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anton/AKnuazev/labs/lab01/cmake-build-default/_3rdParty/Hunter/toolchain/_builds
+CMAKE_BINARY_DIR = /home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/_3rdParty/Hunter/toolchain/_builds
 
 #=============================================================================
 # Special targets to cleanup operation of make.

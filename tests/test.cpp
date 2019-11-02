@@ -1,23 +1,37 @@
 // Copyright 2018 Your Name <your_email>
 
 #include <gtest/gtest.h>
+#include "../include/SharedPtr.h"
 
-#include <json.h>
-
-TEST(Json,WorkTest)
+TEST(SharedPtr_Test,Value_Test)
 {
-    std::string json = R"({"lastname" : "Ivanov","firstname" : "Ivan","age" : 25,"islegal" : false,"marks" : [4,5,5,5,2,3],"address" : {"city" : "Moscow","street" : "Vozdvijenka"}})";
+    int* int_value_ptr=new int{5};
+    SharedPtr<int>ptr1(int_value_ptr);
+    EXPECT_EQ(*ptr1.get(),5);
+    EXPECT_EQ(ptr1.get(),int_value_ptr);
+}
 
-    Json object = Json::parse(json);
-    EXPECT_EQ(std::any_cast<std::string>(object["lastname"]), "Ivanov");
-    EXPECT_EQ(std::any_cast<bool>(object["islegal"]), false);
-    EXPECT_EQ(std::any_cast<int>(object["age"]), 25);
+TEST(SharedPtr_Test, Swap_Test)
+{
+    int* int_value_ptr=new int{5};
+    int* int_value2_ptr=new int{13};
 
-    auto marks = std::any_cast<Json>(object["marks"]);
-    EXPECT_EQ(std::any_cast<int>(marks[0]), 4);
-    EXPECT_EQ(std::any_cast<int>(marks[1]), 5);
+    SharedPtr<int>ptr1(int_value_ptr);
+    SharedPtr<int>ptr2(int_value2_ptr);
+    ptr2.swap(ptr1);
+    EXPECT_EQ(*ptr2.get(),5);
+    EXPECT_EQ(*ptr1.get(),13);
+}
 
-    auto address = std::any_cast<Json>(object["address"]);
-    EXPECT_EQ(std::any_cast<std::string>(address["city"]), "Moscow");
-    EXPECT_EQ(std::any_cast<std::string>(address["street"]), "Vozdvijenka");
+TEST(SharedPtr_Test,ResetTest)
+{
+    int* int_value_ptr=new int{5};
+
+    SharedPtr<int>ptr1(int_value_ptr);
+
+    ptr1.reset(int_value_ptr);
+    EXPECT_EQ(ptr1.get(),int_value_ptr);
+
+    ptr1.reset();
+    EXPECT_EQ(ptr1.get(),nullptr);
 }

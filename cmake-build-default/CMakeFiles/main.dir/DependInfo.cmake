@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/anton/AKnuazev/labs/lab01/sources/main.cpp" "/home/anton/AKnuazev/labs/lab01/cmake-build-default/CMakeFiles/main.dir/sources/main.cpp.o"
+  "/home/anton/AKnuazev/labs/lab03_shared_ptr/sources/main.cpp" "/home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles/main.dir/sources/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -14,7 +14,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/anton/AKnuazev/labs/lab01/cmake-build-default/CMakeFiles/Json.dir/DependInfo.cmake"
+  "/home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles/SharedPtr.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

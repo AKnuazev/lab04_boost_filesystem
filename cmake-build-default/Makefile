@@ -48,10 +48,10 @@ RM = /opt/clion-2019.2.2/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anton/AKnuazev/labs/lab01
+CMAKE_SOURCE_DIR = /home/anton/AKnuazev/labs/lab03_shared_ptr
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anton/AKnuazev/labs/lab01/cmake-build-default
+CMAKE_BINARY_DIR = /home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,17 +67,6 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/opt/clion-2019.2.2/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
@@ -89,11 +78,22 @@ test/fast: test
 
 .PHONY : test/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/opt/clion-2019.2.2/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab01/cmake-build-default/CMakeFiles /home/anton/AKnuazev/labs/lab01/cmake-build-default/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles /home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab01/cmake-build-default/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -135,30 +135,17 @@ tests/fast:
 .PHONY : tests/fast
 
 #=============================================================================
-# Target rules for targets named task3
+# Target rules for targets named SharedPtr
 
 # Build rule for target.
-task3: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 task3
-.PHONY : task3
+SharedPtr: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 SharedPtr
+.PHONY : SharedPtr
 
 # fast build rule for target.
-task3/fast:
-	$(MAKE) -f CMakeFiles/task3.dir/build.make CMakeFiles/task3.dir/build
-.PHONY : task3/fast
-
-#=============================================================================
-# Target rules for targets named json
-
-# Build rule for target.
-json: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 json
-.PHONY : json
-
-# fast build rule for target.
-json/fast:
-	$(MAKE) -f CMakeFiles/json.dir/build.make CMakeFiles/json.dir/build
-.PHONY : json/fast
+SharedPtr/fast:
+	$(MAKE) -f CMakeFiles/SharedPtr.dir/build.make CMakeFiles/SharedPtr.dir/build
+.PHONY : SharedPtr/fast
 
 #=============================================================================
 # Target rules for targets named main
@@ -173,51 +160,35 @@ main/fast:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-#=============================================================================
-# Target rules for targets named Json
+sources/SharedPtr.o: sources/SharedPtr.cpp.o
 
-# Build rule for target.
-Json: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Json
-.PHONY : Json
-
-# fast build rule for target.
-Json/fast:
-	$(MAKE) -f CMakeFiles/Json.dir/build.make CMakeFiles/Json.dir/build
-.PHONY : Json/fast
-
-sources/json.o: sources/json.cpp.o
-
-.PHONY : sources/json.o
+.PHONY : sources/SharedPtr.o
 
 # target to build an object file
-sources/json.cpp.o:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/sources/json.cpp.o
-	$(MAKE) -f CMakeFiles/json.dir/build.make CMakeFiles/json.dir/sources/json.cpp.o
-	$(MAKE) -f CMakeFiles/Json.dir/build.make CMakeFiles/Json.dir/sources/json.cpp.o
-.PHONY : sources/json.cpp.o
+sources/SharedPtr.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/sources/SharedPtr.cpp.o
+	$(MAKE) -f CMakeFiles/SharedPtr.dir/build.make CMakeFiles/SharedPtr.dir/sources/SharedPtr.cpp.o
+.PHONY : sources/SharedPtr.cpp.o
 
-sources/json.i: sources/json.cpp.i
+sources/SharedPtr.i: sources/SharedPtr.cpp.i
 
-.PHONY : sources/json.i
+.PHONY : sources/SharedPtr.i
 
 # target to preprocess a source file
-sources/json.cpp.i:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/sources/json.cpp.i
-	$(MAKE) -f CMakeFiles/json.dir/build.make CMakeFiles/json.dir/sources/json.cpp.i
-	$(MAKE) -f CMakeFiles/Json.dir/build.make CMakeFiles/Json.dir/sources/json.cpp.i
-.PHONY : sources/json.cpp.i
+sources/SharedPtr.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/sources/SharedPtr.cpp.i
+	$(MAKE) -f CMakeFiles/SharedPtr.dir/build.make CMakeFiles/SharedPtr.dir/sources/SharedPtr.cpp.i
+.PHONY : sources/SharedPtr.cpp.i
 
-sources/json.s: sources/json.cpp.s
+sources/SharedPtr.s: sources/SharedPtr.cpp.s
 
-.PHONY : sources/json.s
+.PHONY : sources/SharedPtr.s
 
 # target to generate assembly for a file
-sources/json.cpp.s:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/sources/json.cpp.s
-	$(MAKE) -f CMakeFiles/json.dir/build.make CMakeFiles/json.dir/sources/json.cpp.s
-	$(MAKE) -f CMakeFiles/Json.dir/build.make CMakeFiles/Json.dir/sources/json.cpp.s
-.PHONY : sources/json.cpp.s
+sources/SharedPtr.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/sources/SharedPtr.cpp.s
+	$(MAKE) -f CMakeFiles/SharedPtr.dir/build.make CMakeFiles/SharedPtr.dir/sources/SharedPtr.cpp.s
+.PHONY : sources/SharedPtr.cpp.s
 
 sources/main.o: sources/main.cpp.o
 
@@ -245,33 +216,6 @@ sources/main.s: sources/main.cpp.s
 sources/main.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sources/main.cpp.s
 .PHONY : sources/main.cpp.s
-
-sources/task3.o: sources/task3.cpp.o
-
-.PHONY : sources/task3.o
-
-# target to build an object file
-sources/task3.cpp.o:
-	$(MAKE) -f CMakeFiles/task3.dir/build.make CMakeFiles/task3.dir/sources/task3.cpp.o
-.PHONY : sources/task3.cpp.o
-
-sources/task3.i: sources/task3.cpp.i
-
-.PHONY : sources/task3.i
-
-# target to preprocess a source file
-sources/task3.cpp.i:
-	$(MAKE) -f CMakeFiles/task3.dir/build.make CMakeFiles/task3.dir/sources/task3.cpp.i
-.PHONY : sources/task3.cpp.i
-
-sources/task3.s: sources/task3.cpp.s
-
-.PHONY : sources/task3.s
-
-# target to generate assembly for a file
-sources/task3.cpp.s:
-	$(MAKE) -f CMakeFiles/task3.dir/build.make CMakeFiles/task3.dir/sources/task3.cpp.s
-.PHONY : sources/task3.cpp.s
 
 tests/test.o: tests/test.cpp.o
 
@@ -307,22 +251,17 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... tests"
-	@echo "... task3"
-	@echo "... json"
-	@echo "... main"
-	@echo "... Json"
 	@echo "... test"
-	@echo "... sources/json.o"
-	@echo "... sources/json.i"
-	@echo "... sources/json.s"
+	@echo "... tests"
+	@echo "... SharedPtr"
+	@echo "... edit_cache"
+	@echo "... main"
+	@echo "... sources/SharedPtr.o"
+	@echo "... sources/SharedPtr.i"
+	@echo "... sources/SharedPtr.s"
 	@echo "... sources/main.o"
 	@echo "... sources/main.i"
 	@echo "... sources/main.s"
-	@echo "... sources/task3.o"
-	@echo "... sources/task3.i"
-	@echo "... sources/task3.s"
 	@echo "... tests/test.o"
 	@echo "... tests/test.i"
 	@echo "... tests/test.s"

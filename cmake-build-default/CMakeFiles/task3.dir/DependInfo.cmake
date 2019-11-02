@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/anton/AKnuazev/labs/lab01/sources/task3.cpp" "/home/anton/AKnuazev/labs/lab01/cmake-build-default/CMakeFiles/task3.dir/sources/task3.cpp.o"
+  "/home/anton/AKnuazev/labs/lab03_shared_ptr/sources/task3.cpp" "/home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles/task3.dir/sources/task3.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

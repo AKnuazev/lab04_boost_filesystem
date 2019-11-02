@@ -1,2 +1,2 @@
-/usr/bin/ar qc libjson.a  CMakeFiles/json.dir/sources/json.cpp.o
+/usr/bin/ar qc libjson.a  CMakeFiles/json.dir/sources/json.cpp.o CMakeFiles/json.dir/sources/SharedPtr.cpp.o
 /usr/bin/ranlib libjson.a

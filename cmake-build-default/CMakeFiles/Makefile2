@@ -59,19 +59,19 @@ RM = /opt/clion-2019.2.2/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anton/AKnuazev/labs/lab01
+CMAKE_SOURCE_DIR = /home/anton/AKnuazev/labs/lab03_shared_ptr
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anton/AKnuazev/labs/lab01/cmake-build-default
+CMAKE_BINARY_DIR = /home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default
 
 #=============================================================================
 # Target rules for target CMakeFiles/tests.dir
 
 # All Build rule for target.
-CMakeFiles/tests.dir/all: CMakeFiles/json.dir/all
+CMakeFiles/tests.dir/all: CMakeFiles/SharedPtr.dir/all
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anton/AKnuazev/labs/lab01/cmake-build-default/CMakeFiles --progress-num=9,10,11 "Built target tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles --progress-num=5,6,7 "Built target tests"
 .PHONY : CMakeFiles/tests.dir/all
 
 # Include target in all.
@@ -81,9 +81,9 @@ all: CMakeFiles/tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab01/cmake-build-default/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab01/cmake-build-default/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles 0
 .PHONY : CMakeFiles/tests.dir/rule
 
 # Convenience name for target.
@@ -102,76 +102,39 @@ clean: CMakeFiles/tests.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/task3.dir
+# Target rules for target CMakeFiles/SharedPtr.dir
 
 # All Build rule for target.
-CMakeFiles/task3.dir/all:
-	$(MAKE) -f CMakeFiles/task3.dir/build.make CMakeFiles/task3.dir/depend
-	$(MAKE) -f CMakeFiles/task3.dir/build.make CMakeFiles/task3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anton/AKnuazev/labs/lab01/cmake-build-default/CMakeFiles --progress-num=7,8 "Built target task3"
-.PHONY : CMakeFiles/task3.dir/all
+CMakeFiles/SharedPtr.dir/all:
+	$(MAKE) -f CMakeFiles/SharedPtr.dir/build.make CMakeFiles/SharedPtr.dir/depend
+	$(MAKE) -f CMakeFiles/SharedPtr.dir/build.make CMakeFiles/SharedPtr.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles --progress-num=1,2 "Built target SharedPtr"
+.PHONY : CMakeFiles/SharedPtr.dir/all
 
 # Include target in all.
-all: CMakeFiles/task3.dir/all
+all: CMakeFiles/SharedPtr.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/task3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab01/cmake-build-default/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/task3.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab01/cmake-build-default/CMakeFiles 0
-.PHONY : CMakeFiles/task3.dir/rule
+CMakeFiles/SharedPtr.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/SharedPtr.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles 0
+.PHONY : CMakeFiles/SharedPtr.dir/rule
 
 # Convenience name for target.
-task3: CMakeFiles/task3.dir/rule
+SharedPtr: CMakeFiles/SharedPtr.dir/rule
 
-.PHONY : task3
-
-# clean rule for target.
-CMakeFiles/task3.dir/clean:
-	$(MAKE) -f CMakeFiles/task3.dir/build.make CMakeFiles/task3.dir/clean
-.PHONY : CMakeFiles/task3.dir/clean
+.PHONY : SharedPtr
 
 # clean rule for target.
-clean: CMakeFiles/task3.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/json.dir
-
-# All Build rule for target.
-CMakeFiles/json.dir/all:
-	$(MAKE) -f CMakeFiles/json.dir/build.make CMakeFiles/json.dir/depend
-	$(MAKE) -f CMakeFiles/json.dir/build.make CMakeFiles/json.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anton/AKnuazev/labs/lab01/cmake-build-default/CMakeFiles --progress-num=3,4 "Built target json"
-.PHONY : CMakeFiles/json.dir/all
-
-# Include target in all.
-all: CMakeFiles/json.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/json.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab01/cmake-build-default/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/json.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab01/cmake-build-default/CMakeFiles 0
-.PHONY : CMakeFiles/json.dir/rule
-
-# Convenience name for target.
-json: CMakeFiles/json.dir/rule
-
-.PHONY : json
+CMakeFiles/SharedPtr.dir/clean:
+	$(MAKE) -f CMakeFiles/SharedPtr.dir/build.make CMakeFiles/SharedPtr.dir/clean
+.PHONY : CMakeFiles/SharedPtr.dir/clean
 
 # clean rule for target.
-CMakeFiles/json.dir/clean:
-	$(MAKE) -f CMakeFiles/json.dir/build.make CMakeFiles/json.dir/clean
-.PHONY : CMakeFiles/json.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/json.dir/clean
+clean: CMakeFiles/SharedPtr.dir/clean
 
 .PHONY : clean
 
@@ -179,10 +142,10 @@ clean: CMakeFiles/json.dir/clean
 # Target rules for target CMakeFiles/main.dir
 
 # All Build rule for target.
-CMakeFiles/main.dir/all: CMakeFiles/Json.dir/all
+CMakeFiles/main.dir/all: CMakeFiles/SharedPtr.dir/all
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anton/AKnuazev/labs/lab01/cmake-build-default/CMakeFiles --progress-num=5,6 "Built target main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles --progress-num=3,4 "Built target main"
 .PHONY : CMakeFiles/main.dir/all
 
 # Include target in all.
@@ -192,9 +155,9 @@ all: CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab01/cmake-build-default/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab01/cmake-build-default/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles 0
 .PHONY : CMakeFiles/main.dir/rule
 
 # Convenience name for target.
@@ -209,43 +172,6 @@ CMakeFiles/main.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/main.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/Json.dir
-
-# All Build rule for target.
-CMakeFiles/Json.dir/all:
-	$(MAKE) -f CMakeFiles/Json.dir/build.make CMakeFiles/Json.dir/depend
-	$(MAKE) -f CMakeFiles/Json.dir/build.make CMakeFiles/Json.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anton/AKnuazev/labs/lab01/cmake-build-default/CMakeFiles --progress-num=1,2 "Built target Json"
-.PHONY : CMakeFiles/Json.dir/all
-
-# Include target in all.
-all: CMakeFiles/Json.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/Json.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab01/cmake-build-default/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Json.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab01/cmake-build-default/CMakeFiles 0
-.PHONY : CMakeFiles/Json.dir/rule
-
-# Convenience name for target.
-Json: CMakeFiles/Json.dir/rule
-
-.PHONY : Json
-
-# clean rule for target.
-CMakeFiles/Json.dir/clean:
-	$(MAKE) -f CMakeFiles/Json.dir/build.make CMakeFiles/Json.dir/clean
-.PHONY : CMakeFiles/Json.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/Json.dir/clean
 
 .PHONY : clean
 
