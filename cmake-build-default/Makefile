@@ -48,10 +48,10 @@ RM = /opt/clion-2019.2.2/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anton/AKnuazev/labs/lab03_shared_ptr
+CMAKE_SOURCE_DIR = /home/anton/AKnuazev/labs/lab04_boost_filesystem
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default
+CMAKE_BINARY_DIR = /home/anton/AKnuazev/labs/lab04_boost_filesystem/cmake-build-default
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,22 +78,11 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/opt/clion-2019.2.2/bin/cmake/linux/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles /home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab04_boost_filesystem/cmake-build-default/CMakeFiles /home/anton/AKnuazev/labs/lab04_boost_filesystem/cmake-build-default/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab04_boost_filesystem/cmake-build-default/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,89 +111,57 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named tests
+# Target rules for targets named FTPFilesAnalyzerSources
 
 # Build rule for target.
-tests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tests
-.PHONY : tests
+FTPFilesAnalyzerSources: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 FTPFilesAnalyzerSources
+.PHONY : FTPFilesAnalyzerSources
 
 # fast build rule for target.
-tests/fast:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
-.PHONY : tests/fast
+FTPFilesAnalyzerSources/fast:
+	$(MAKE) -f CMakeFiles/FTPFilesAnalyzerSources.dir/build.make CMakeFiles/FTPFilesAnalyzerSources.dir/build
+.PHONY : FTPFilesAnalyzerSources/fast
 
 #=============================================================================
-# Target rules for targets named SharedPtr
+# Target rules for targets named FTPFilesAnalyzerMain
 
 # Build rule for target.
-SharedPtr: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 SharedPtr
-.PHONY : SharedPtr
+FTPFilesAnalyzerMain: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 FTPFilesAnalyzerMain
+.PHONY : FTPFilesAnalyzerMain
 
 # fast build rule for target.
-SharedPtr/fast:
-	$(MAKE) -f CMakeFiles/SharedPtr.dir/build.make CMakeFiles/SharedPtr.dir/build
-.PHONY : SharedPtr/fast
+FTPFilesAnalyzerMain/fast:
+	$(MAKE) -f CMakeFiles/FTPFilesAnalyzerMain.dir/build.make CMakeFiles/FTPFilesAnalyzerMain.dir/build
+.PHONY : FTPFilesAnalyzerMain/fast
 
-#=============================================================================
-# Target rules for targets named sharedPtr
+sources/FTPFilesAnalyzer.o: sources/FTPFilesAnalyzer.cpp.o
 
-# Build rule for target.
-sharedPtr: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sharedPtr
-.PHONY : sharedPtr
-
-# fast build rule for target.
-sharedPtr/fast:
-	$(MAKE) -f CMakeFiles/sharedPtr.dir/build.make CMakeFiles/sharedPtr.dir/build
-.PHONY : sharedPtr/fast
-
-#=============================================================================
-# Target rules for targets named main
-
-# Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main
-.PHONY : main
-
-# fast build rule for target.
-main/fast:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
-
-sources/SharedPtr.o: sources/SharedPtr.cpp.o
-
-.PHONY : sources/SharedPtr.o
+.PHONY : sources/FTPFilesAnalyzer.o
 
 # target to build an object file
-sources/SharedPtr.cpp.o:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/sources/SharedPtr.cpp.o
-	$(MAKE) -f CMakeFiles/SharedPtr.dir/build.make CMakeFiles/SharedPtr.dir/sources/SharedPtr.cpp.o
-	$(MAKE) -f CMakeFiles/sharedPtr.dir/build.make CMakeFiles/sharedPtr.dir/sources/SharedPtr.cpp.o
-.PHONY : sources/SharedPtr.cpp.o
+sources/FTPFilesAnalyzer.cpp.o:
+	$(MAKE) -f CMakeFiles/FTPFilesAnalyzerSources.dir/build.make CMakeFiles/FTPFilesAnalyzerSources.dir/sources/FTPFilesAnalyzer.cpp.o
+.PHONY : sources/FTPFilesAnalyzer.cpp.o
 
-sources/SharedPtr.i: sources/SharedPtr.cpp.i
+sources/FTPFilesAnalyzer.i: sources/FTPFilesAnalyzer.cpp.i
 
-.PHONY : sources/SharedPtr.i
+.PHONY : sources/FTPFilesAnalyzer.i
 
 # target to preprocess a source file
-sources/SharedPtr.cpp.i:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/sources/SharedPtr.cpp.i
-	$(MAKE) -f CMakeFiles/SharedPtr.dir/build.make CMakeFiles/SharedPtr.dir/sources/SharedPtr.cpp.i
-	$(MAKE) -f CMakeFiles/sharedPtr.dir/build.make CMakeFiles/sharedPtr.dir/sources/SharedPtr.cpp.i
-.PHONY : sources/SharedPtr.cpp.i
+sources/FTPFilesAnalyzer.cpp.i:
+	$(MAKE) -f CMakeFiles/FTPFilesAnalyzerSources.dir/build.make CMakeFiles/FTPFilesAnalyzerSources.dir/sources/FTPFilesAnalyzer.cpp.i
+.PHONY : sources/FTPFilesAnalyzer.cpp.i
 
-sources/SharedPtr.s: sources/SharedPtr.cpp.s
+sources/FTPFilesAnalyzer.s: sources/FTPFilesAnalyzer.cpp.s
 
-.PHONY : sources/SharedPtr.s
+.PHONY : sources/FTPFilesAnalyzer.s
 
 # target to generate assembly for a file
-sources/SharedPtr.cpp.s:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/sources/SharedPtr.cpp.s
-	$(MAKE) -f CMakeFiles/SharedPtr.dir/build.make CMakeFiles/SharedPtr.dir/sources/SharedPtr.cpp.s
-	$(MAKE) -f CMakeFiles/sharedPtr.dir/build.make CMakeFiles/sharedPtr.dir/sources/SharedPtr.cpp.s
-.PHONY : sources/SharedPtr.cpp.s
+sources/FTPFilesAnalyzer.cpp.s:
+	$(MAKE) -f CMakeFiles/FTPFilesAnalyzerSources.dir/build.make CMakeFiles/FTPFilesAnalyzerSources.dir/sources/FTPFilesAnalyzer.cpp.s
+.PHONY : sources/FTPFilesAnalyzer.cpp.s
 
 sources/main.o: sources/main.cpp.o
 
@@ -212,7 +169,7 @@ sources/main.o: sources/main.cpp.o
 
 # target to build an object file
 sources/main.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sources/main.cpp.o
+	$(MAKE) -f CMakeFiles/FTPFilesAnalyzerMain.dir/build.make CMakeFiles/FTPFilesAnalyzerMain.dir/sources/main.cpp.o
 .PHONY : sources/main.cpp.o
 
 sources/main.i: sources/main.cpp.i
@@ -221,7 +178,7 @@ sources/main.i: sources/main.cpp.i
 
 # target to preprocess a source file
 sources/main.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sources/main.cpp.i
+	$(MAKE) -f CMakeFiles/FTPFilesAnalyzerMain.dir/build.make CMakeFiles/FTPFilesAnalyzerMain.dir/sources/main.cpp.i
 .PHONY : sources/main.cpp.i
 
 sources/main.s: sources/main.cpp.s
@@ -230,35 +187,8 @@ sources/main.s: sources/main.cpp.s
 
 # target to generate assembly for a file
 sources/main.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sources/main.cpp.s
+	$(MAKE) -f CMakeFiles/FTPFilesAnalyzerMain.dir/build.make CMakeFiles/FTPFilesAnalyzerMain.dir/sources/main.cpp.s
 .PHONY : sources/main.cpp.s
-
-tests/test.o: tests/test.cpp.o
-
-.PHONY : tests/test.o
-
-# target to build an object file
-tests/test.cpp.o:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/test.cpp.o
-.PHONY : tests/test.cpp.o
-
-tests/test.i: tests/test.cpp.i
-
-.PHONY : tests/test.i
-
-# target to preprocess a source file
-tests/test.cpp.i:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/test.cpp.i
-.PHONY : tests/test.cpp.i
-
-tests/test.s: tests/test.cpp.s
-
-.PHONY : tests/test.s
-
-# target to generate assembly for a file
-tests/test.cpp.s:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/test.cpp.s
-.PHONY : tests/test.cpp.s
 
 # Help Target
 help:
@@ -267,21 +197,15 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... tests"
-	@echo "... SharedPtr"
-	@echo "... sharedPtr"
-	@echo "... main"
+	@echo "... FTPFilesAnalyzerSources"
 	@echo "... edit_cache"
-	@echo "... test"
-	@echo "... sources/SharedPtr.o"
-	@echo "... sources/SharedPtr.i"
-	@echo "... sources/SharedPtr.s"
+	@echo "... FTPFilesAnalyzerMain"
+	@echo "... sources/FTPFilesAnalyzer.o"
+	@echo "... sources/FTPFilesAnalyzer.i"
+	@echo "... sources/FTPFilesAnalyzer.s"
 	@echo "... sources/main.o"
 	@echo "... sources/main.i"
 	@echo "... sources/main.s"
-	@echo "... tests/test.o"
-	@echo "... tests/test.i"
-	@echo "... tests/test.s"
 .PHONY : help
 
 

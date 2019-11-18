@@ -1,2 +1,0 @@
-/usr/bin/ar qc libsharedPtr.a  CMakeFiles/sharedPtr.dir/sources/SharedPtr.cpp.o
-/usr/bin/ranlib libsharedPtr.a

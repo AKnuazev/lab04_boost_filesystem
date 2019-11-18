@@ -1,0 +1,2 @@
+/usr/bin/ar qc libFTPFilesAnalyzerSources.a  CMakeFiles/FTPFilesAnalyzerSources.dir/sources/FTPFilesAnalyzer.cpp.o
+/usr/bin/ranlib libFTPFilesAnalyzerSources.a

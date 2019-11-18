@@ -49,7 +49,7 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "Assimp"
-    VERSION "3.2-p2"
+    VERSION "5.0.0-07779a7a"
 )
 hunter_final_config(
     PACKAGE "Async++"
@@ -61,7 +61,7 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "BZip2"
-    VERSION "1.0.6-p3"
+    VERSION "1.0.6-p4"
 )
 hunter_final_config(
     PACKAGE "Beast"
@@ -69,7 +69,7 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "Boost"
-    VERSION "1.68.0-p1"
+    VERSION "1.70.0-p0"
 )
 hunter_final_config(
     PACKAGE "BoostCompute"
@@ -81,7 +81,7 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "BoringSSL"
-    VERSION "1.0.0"
+    VERSION "0.0.0-0f5ecd3a8-p0"
 )
 hunter_final_config(
     PACKAGE "Box2D"
@@ -93,27 +93,27 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "CLI11"
-    VERSION "1.6.1"
+    VERSION "1.8.0"
 )
 hunter_final_config(
     PACKAGE "CURL"
-    VERSION "7.60.0-p0"
+    VERSION "7.60.0-p2"
 )
 hunter_final_config(
     PACKAGE "CapnProto"
-    VERSION "0.6.1"
+    VERSION "0.7.0"
 )
 hunter_final_config(
     PACKAGE "Catch"
-    VERSION "2.2.2"
+    VERSION "2.9.1"
 )
 hunter_final_config(
     PACKAGE "Clang"
-    VERSION "4.0.1-p0"
+    VERSION "6.0.1-p0"
 )
 hunter_final_config(
     PACKAGE "ClangToolsExtra"
-    VERSION "4.0.1"
+    VERSION "6.0.1"
 )
 hunter_final_config(
     PACKAGE "Comet"
@@ -128,12 +128,16 @@ hunter_final_config(
     VERSION "1.0.5-hunter"
 )
 hunter_final_config(
+    PACKAGE "CreateLaunchers"
+    VERSION "0.2.1"
+)
+hunter_final_config(
     PACKAGE "CsvParserCPlusPlus"
     VERSION "1.0.1"
 )
 hunter_final_config(
     PACKAGE "Eigen"
-    VERSION "3.3.5"
+    VERSION "3.3.7"
 )
 hunter_final_config(
     PACKAGE "EnumGroup"
@@ -142,6 +146,10 @@ hunter_final_config(
 hunter_final_config(
     PACKAGE "Expat"
     VERSION "2.1.1"
+)
+hunter_final_config(
+    PACKAGE "FP16"
+    VERSION "0.0.0-febbb1c-p0"
 )
 hunter_final_config(
     PACKAGE "FakeIt"
@@ -165,11 +173,19 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "GTest"
-    VERSION "1.8.1"
+    VERSION "1.8.0-hunter-p11"
+)
+hunter_final_config(
+    PACKAGE "HalideIR"
+    VERSION "0.0-32057b5-p0"
+)
+hunter_final_config(
+    PACKAGE "HastyNoise"
+    VERSION "0.8.3"
 )
 hunter_final_config(
     PACKAGE "ICU"
-    VERSION "55.1-p3"
+    VERSION "63.1-p5"
 )
 hunter_final_config(
     PACKAGE "IF97"
@@ -181,7 +197,7 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "Jpeg"
-    VERSION "9b-p3"
+    VERSION "9c-p0"
 )
 hunter_final_config(
     PACKAGE "JsonSpirit"
@@ -193,11 +209,11 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "LLVM"
-    VERSION "4.0.1-p0"
+    VERSION "6.0.1-p0"
 )
 hunter_final_config(
     PACKAGE "LLVMCompilerRT"
-    VERSION "4.0.1-patched"
+    VERSION "6.0.1"
 )
 hunter_final_config(
     PACKAGE "Leathers"
@@ -228,8 +244,16 @@ hunter_final_config(
     VERSION "1.7.0"
 )
 hunter_final_config(
+    PACKAGE "LodePNG"
+    VERSION "0.0.0-p1"
+)
+hunter_final_config(
     PACKAGE "Lua"
     VERSION "5.3.2-p2"
+)
+hunter_final_config(
+    PACKAGE "MathFu"
+    VERSION "1.1.0-p0"
 )
 hunter_final_config(
     PACKAGE "Microsoft.GSL"
@@ -237,11 +261,19 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "MySQL-client"
-    VERSION "6.1.9-p0"
+    VERSION "6.1.9-p1"
 )
 hunter_final_config(
     PACKAGE "NASM"
     VERSION "2.12.02"
+)
+hunter_final_config(
+    PACKAGE "NLopt"
+    VERSION "2.5.0-p0"
+)
+hunter_final_config(
+    PACKAGE "ONNX"
+    VERSION "1.4.1-p0"
 )
 hunter_final_config(
     PACKAGE "OpenAL"
@@ -249,7 +281,7 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "OpenBLAS"
-    VERSION "0.3.3"
+    VERSION "0.3.7"
 )
 hunter_final_config(
     PACKAGE "OpenCL"
@@ -261,23 +293,27 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "OpenCV"
-    VERSION "3.4.1-p1"
+    VERSION "4.1.1-p0"
 )
 hunter_final_config(
     PACKAGE "OpenCV-Extra"
-    VERSION "3.4.1"
+    VERSION "4.1.1"
 )
 hunter_final_config(
     PACKAGE "OpenNMTTokenizer"
-    VERSION "0.2.0-p1"
+    VERSION "1.11.0-p1"
 )
 hunter_final_config(
     PACKAGE "OpenSSL"
-    VERSION "1.1.1"
+    VERSION "1.1.1c"
+)
+hunter_final_config(
+    PACKAGE "OpenSceneGraph"
+    VERSION "3.6.3-p0"
 )
 hunter_final_config(
     PACKAGE "PNG"
-    VERSION "1.6.26-p3"
+    VERSION "1.6.26-p6"
 )
 hunter_final_config(
     PACKAGE "PROJ4"
@@ -297,7 +333,7 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "Protobuf"
-    VERSION "3.5.2-p0"
+    VERSION "3.7.1-p0"
 )
 hunter_final_config(
     PACKAGE "Qt"
@@ -309,23 +345,35 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "QtCMakeExtra"
-    VERSION "1.0.32"
+    VERSION "1.0.34"
+)
+hunter_final_config(
+    PACKAGE "QtPropertyEditor"
+    VERSION "2.1.3-p0"
 )
 hunter_final_config(
     PACKAGE "QtQmlManager"
     VERSION "1.0.0"
 )
 hunter_final_config(
+    PACKAGE "Qwt"
+    VERSION "6.1-p3"
+)
+hunter_final_config(
     PACKAGE "RapidJSON"
-    VERSION "1.1.0"
+    VERSION "1.1.0-66eb606-p0"
 )
 hunter_final_config(
     PACKAGE "RapidXML"
     VERSION "1.13"
 )
 hunter_final_config(
+    PACKAGE "RedisClient"
+    VERSION "0.6.1-p1"
+)
+hunter_final_config(
     PACKAGE "SDL2"
-    VERSION "2.0.7-p1"
+    VERSION "2.0.7-p3"
 )
 hunter_final_config(
     PACKAGE "SDL_image"
@@ -340,16 +388,32 @@ hunter_final_config(
     VERSION "2.0.14-p0"
 )
 hunter_final_config(
+    PACKAGE "SPIRV-Headers"
+    VERSION "1.5.1"
+)
+hunter_final_config(
+    PACKAGE "SPIRV-Tools"
+    VERSION "2019.4-p0"
+)
+hunter_final_config(
+    PACKAGE "SimpleSignal"
+    VERSION "0.0.0-79c3f68-p1"
+)
+hunter_final_config(
     PACKAGE "Snappy"
-    VERSION "1.1.6-p0"
+    VERSION "1.1.7"
 )
 hunter_final_config(
     PACKAGE "Sober"
     VERSION "0.1.3"
 )
 hunter_final_config(
+    PACKAGE "Sqlpp11"
+    VERSION "0.57-p0"
+)
+hunter_final_config(
     PACKAGE "SuiteSparse"
-    VERSION "4.5.1-p1"
+    VERSION "5.1.2-p0"
 )
 hunter_final_config(
     PACKAGE "TCLAP"
@@ -373,7 +437,7 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "WDC"
-    VERSION "1.1.1"
+    VERSION "1.1.5"
 )
 hunter_final_config(
     PACKAGE "WTL"
@@ -389,19 +453,23 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "WebP"
-    VERSION "0.6.1-p4"
+    VERSION "1.0.2-p3"
 )
 hunter_final_config(
     PACKAGE "WinSparkle"
     VERSION "0.4.0"
 )
 hunter_final_config(
+    PACKAGE "YAJL"
+    VERSION "2.1.0-p0"
+)
+hunter_final_config(
     PACKAGE "ZLIB"
-    VERSION "1.2.8-p3"
+    VERSION "1.2.11-p1"
 )
 hunter_final_config(
     PACKAGE "ZMQPP"
-    VERSION "4.1.2-p3"
+    VERSION "4.2.0-p0"
 )
 hunter_final_config(
     PACKAGE "ZeroMQ"
@@ -410,6 +478,10 @@ hunter_final_config(
 hunter_final_config(
     PACKAGE "acf"
     VERSION "0.1.14"
+)
+hunter_final_config(
+    PACKAGE "actionlib"
+    VERSION "1.11.13-p0"
 )
 hunter_final_config(
     PACKAGE "aes"
@@ -465,11 +537,19 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "android_sdk_tools_packer"
-    VERSION "1.0.2"
+    VERSION "1.0.3"
 )
 hunter_final_config(
     PACKAGE "android_support_repository_packer"
     VERSION "1.0.0"
+)
+hunter_final_config(
+    PACKAGE "angles"
+    VERSION "1.9.11-p0"
+)
+hunter_final_config(
+    PACKAGE "arabica"
+    VERSION "0.0.0-a202766-p0"
 )
 hunter_final_config(
     PACKAGE "autobahn-cpp"
@@ -480,8 +560,20 @@ hunter_final_config(
     VERSION "0.3.0"
 )
 hunter_final_config(
+    PACKAGE "aws-c-common"
+    VERSION "0.2.1-p0"
+)
+hunter_final_config(
     PACKAGE "benchmark"
     VERSION "1.4.0"
+)
+hunter_final_config(
+    PACKAGE "bento4"
+    VERSION "1.5.1-628-e6ee435-p0"
+)
+hunter_final_config(
+    PACKAGE "binaryen"
+    VERSION "1.38.28-p1"
 )
 hunter_final_config(
     PACKAGE "bison"
@@ -490,6 +582,14 @@ hunter_final_config(
 hunter_final_config(
     PACKAGE "boost-pba"
     VERSION "1.0.0-p0"
+)
+hunter_final_config(
+    PACKAGE "botan"
+    VERSION "2.11.0-110af9494"
+)
+hunter_final_config(
+    PACKAGE "breakpad"
+    VERSION "0.0.0-12ecff3-p2"
 )
 hunter_final_config(
     PACKAGE "bullet"
@@ -505,7 +605,7 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "catkin"
-    VERSION "0.7.11-p2"
+    VERSION "0.7.17-p0"
 )
 hunter_final_config(
     PACKAGE "cctz"
@@ -521,7 +621,7 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "ceres-solver"
-    VERSION "1.12.0-p2"
+    VERSION "1.14.0-p1"
 )
 hunter_final_config(
     PACKAGE "check_ci_tag"
@@ -529,23 +629,43 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "civetweb"
-    VERSION "1.10-p1"
+    VERSION "1.11-p0"
 )
 hunter_final_config(
     PACKAGE "clBLAS"
     VERSION "2.10.0-p0"
 )
 hunter_final_config(
+    PACKAGE "class_loader"
+    VERSION "0.4.1-p0"
+)
+hunter_final_config(
+    PACKAGE "cmcstl2"
+    VERSION "0.0.0-bee0705e99"
+)
+hunter_final_config(
     PACKAGE "convertutf"
     VERSION "1.0.1"
+)
+hunter_final_config(
+    PACKAGE "corrade"
+    VERSION "2019.01"
 )
 hunter_final_config(
     PACKAGE "cpp_redis"
     VERSION "3.5.0-h1"
 )
 hunter_final_config(
+    PACKAGE "cppcodec"
+    VERSION "0.2-p0"
+)
+hunter_final_config(
     PACKAGE "cpr"
     VERSION "1.3.0"
+)
+hunter_final_config(
+    PACKAGE "cpuinfo"
+    VERSION "0.0.0-d5e37ad-p0"
 )
 hunter_final_config(
     PACKAGE "crashpad"
@@ -561,7 +681,7 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "cryptopp"
-    VERSION "5.6.5-p0"
+    VERSION "8.2.0-p0"
 )
 hunter_final_config(
     PACKAGE "ctti"
@@ -569,7 +689,7 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "cub"
-    VERSION "1.7.4-p0"
+    VERSION "1.8.0-p0"
 )
 hunter_final_config(
     PACKAGE "cvmatio"
@@ -609,19 +729,27 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "dlib"
-    VERSION "19.14-p0"
+    VERSION "19.17-p0"
+)
+hunter_final_config(
+    PACKAGE "dlpack"
+    VERSION "0.2-0acb731"
 )
 hunter_final_config(
     PACKAGE "dmlc-core"
-    VERSION "0.0.0-p1"
+    VERSION "0.3-3943914-p0"
 )
 hunter_final_config(
     PACKAGE "doctest"
-    VERSION "1.2.0"
+    VERSION "2.2.0"
 )
 hunter_final_config(
     PACKAGE "double-conversion"
-    VERSION "3.0.0"
+    VERSION "3.1.4"
+)
+hunter_final_config(
+    PACKAGE "draco"
+    VERSION "1.3.4-p0"
 )
 hunter_final_config(
     PACKAGE "dri2proto"
@@ -664,16 +792,24 @@ hunter_final_config(
     VERSION "1.3.13-p1"
 )
 hunter_final_config(
+    PACKAGE "entityx"
+    VERSION "1.3.0-p1"
+)
+hunter_final_config(
     PACKAGE "eos"
     VERSION "0.12.1"
 )
 hunter_final_config(
     PACKAGE "ethash"
-    VERSION "0.3.0"
+    VERSION "0.5.0"
 )
 hunter_final_config(
     PACKAGE "farmhash"
     VERSION "1.1"
+)
+hunter_final_config(
+    PACKAGE "ffmpeg"
+    VERSION "n4.1-dev-45499e557c-p7"
 )
 hunter_final_config(
     PACKAGE "fft2d"
@@ -693,15 +829,15 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "fmt"
-    VERSION "4.1.0"
+    VERSION "5.2.1"
 )
 hunter_final_config(
     PACKAGE "folly"
-    VERSION "2017.11.13.00-p0"
+    VERSION "2018.10.22.00-p4"
 )
 hunter_final_config(
     PACKAGE "freetype"
-    VERSION "2.6.2"
+    VERSION "2.9.1-p1"
 )
 hunter_final_config(
     PACKAGE "frugally-deep"
@@ -709,11 +845,11 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "gRPC"
-    VERSION "1.12.1-p0"
+    VERSION "1.17.2-p0"
 )
 hunter_final_config(
     PACKAGE "gauze"
-    VERSION "0.5.0"
+    VERSION "0.7.1"
 )
 hunter_final_config(
     PACKAGE "gemmlowp"
@@ -737,7 +873,7 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "glbinding"
-    VERSION "2.1.3-p0"
+    VERSION "3.0.2-p0"
 )
 hunter_final_config(
     PACKAGE "glew"
@@ -745,7 +881,7 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "glfw"
-    VERSION "3.3.0-p4"
+    VERSION "3.3.0-f9923e9-p0"
 )
 hunter_final_config(
     PACKAGE "glib"
@@ -753,7 +889,7 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "glm"
-    VERSION "0.9.9.0"
+    VERSION "0.9.9.2"
 )
 hunter_final_config(
     PACKAGE "globjects"
@@ -761,7 +897,7 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "glog"
-    VERSION "0.3.5-p2"
+    VERSION "0.4.0"
 )
 hunter_final_config(
     PACKAGE "glproto"
@@ -805,7 +941,7 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "harfbuzz"
-    VERSION "1.7.6-p0"
+    VERSION "1.7.6-p2"
 )
 hunter_final_config(
     PACKAGE "hdf5"
@@ -820,12 +956,28 @@ hunter_final_config(
     VERSION "2.8.0"
 )
 hunter_final_config(
+    PACKAGE "hunter_venv"
+    VERSION "1.0.1"
+)
+hunter_final_config(
     PACKAGE "ice"
-    VERSION "1.0.8"
+    VERSION "1.0.9"
+)
+hunter_final_config(
+    PACKAGE "icu-le-hb"
+    VERSION "1.0.3-231788a-p0"
+)
+hunter_final_config(
+    PACKAGE "icu-lx"
+    VERSION "63.1-p1"
+)
+hunter_final_config(
+    PACKAGE "imagequant"
+    VERSION "2.12.2-p0"
 )
 hunter_final_config(
     PACKAGE "imgui"
-    VERSION "1.62"
+    VERSION "1.70.p0"
 )
 hunter_final_config(
     PACKAGE "imshow"
@@ -837,7 +989,7 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "inputproto"
-    VERSION "2.2"
+    VERSION "2.3"
 )
 hunter_final_config(
     PACKAGE "intltool"
@@ -848,6 +1000,10 @@ hunter_final_config(
     VERSION "2.0.2"
 )
 hunter_final_config(
+    PACKAGE "intx"
+    VERSION "0.2.0"
+)
+hunter_final_config(
     PACKAGE "ios_sim"
     VERSION "3.1.1"
 )
@@ -856,8 +1012,12 @@ hunter_final_config(
     VERSION "20151201"
 )
 hunter_final_config(
+    PACKAGE "iroha-ed25519"
+    VERSION "2.0.0"
+)
+hunter_final_config(
     PACKAGE "irrXML"
-    VERSION "1.2"
+    VERSION "1.2-p0"
 )
 hunter_final_config(
     PACKAGE "jaegertracing"
@@ -885,15 +1045,19 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "kbproto"
-    VERSION "1.0.6"
+    VERSION "1.0.7"
 )
 hunter_final_config(
     PACKAGE "lcms"
     VERSION "2.9-p0"
 )
 hunter_final_config(
+    PACKAGE "lehrfempp"
+    VERSION "0.7.20"
+)
+hunter_final_config(
     PACKAGE "leveldb"
-    VERSION "1.20"
+    VERSION "1.22"
 )
 hunter_final_config(
     PACKAGE "libcpuid"
@@ -914,6 +1078,14 @@ hunter_final_config(
 hunter_final_config(
     PACKAGE "libffi"
     VERSION "3.2.1"
+)
+hunter_final_config(
+    PACKAGE "libigl"
+    VERSION "2.0.0-e33f534-p1"
+)
+hunter_final_config(
+    PACKAGE "libjpeg-turbo"
+    VERSION "2.0.3-p0"
 )
 hunter_final_config(
     PACKAGE "libjson-rpc-cpp"
@@ -948,16 +1120,28 @@ hunter_final_config(
     VERSION "4.0"
 )
 hunter_final_config(
+    PACKAGE "libusb"
+    VERSION "1.0.22"
+)
+hunter_final_config(
     PACKAGE "libuv"
-    VERSION "1.21.0-p0"
+    VERSION "1.24.0-p1"
+)
+hunter_final_config(
+    PACKAGE "libxdg-basedir"
+    VERSION "1.2.0"
 )
 hunter_final_config(
     PACKAGE "libxml2"
-    VERSION "2.9.7"
+    VERSION "2.9.7-p0"
 )
 hunter_final_config(
     PACKAGE "libyuv"
     VERSION "1514-p3"
+)
+hunter_final_config(
+    PACKAGE "libzip"
+    VERSION "1.5.2-d68a667-p0"
 )
 hunter_final_config(
     PACKAGE "lmdb"
@@ -980,6 +1164,10 @@ hunter_final_config(
     VERSION "5.2.3-p4"
 )
 hunter_final_config(
+    PACKAGE "magnum"
+    VERSION "2019.01"
+)
+hunter_final_config(
     PACKAGE "md5"
     VERSION "1.6"
 )
@@ -990,6 +1178,14 @@ hunter_final_config(
 hunter_final_config(
     PACKAGE "minizip"
     VERSION "1.0.1-p3"
+)
+hunter_final_config(
+    PACKAGE "mkl"
+    VERSION "20190502"
+)
+hunter_final_config(
+    PACKAGE "mkldnn"
+    VERSION "0.19-p0"
 )
 hunter_final_config(
     PACKAGE "mng"
@@ -1012,20 +1208,40 @@ hunter_final_config(
     VERSION "1.4.1-p2"
 )
 hunter_final_config(
+    PACKAGE "mshadow"
+    VERSION "1.1-1d79ecf-p0"
+)
+hunter_final_config(
     PACKAGE "mtplz"
     VERSION "0.1-p3"
+)
+hunter_final_config(
+    PACKAGE "mxnet"
+    VERSION "1.5.0.rc1-b64e00a-p0"
 )
 hunter_final_config(
     PACKAGE "nanoflann"
     VERSION "1.2.3-p0"
 )
 hunter_final_config(
+    PACKAGE "nanosvg"
+    VERSION "0.0.0-2b08dee-p0"
+)
+hunter_final_config(
     PACKAGE "ncnn"
     VERSION "20180314-p2"
 )
 hunter_final_config(
+    PACKAGE "ncursesw"
+    VERSION "6.1"
+)
+hunter_final_config(
+    PACKAGE "nlohmann_fifo_map"
+    VERSION "0.0.0-0dfbf5d-p1"
+)
+hunter_final_config(
     PACKAGE "nlohmann_json"
-    VERSION "3.3.0"
+    VERSION "3.6.1"
 )
 hunter_final_config(
     PACKAGE "nsync"
@@ -1057,7 +1273,7 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "ogles_gpgpu"
-    VERSION "0.2.10"
+    VERSION "0.3.6"
 )
 hunter_final_config(
     PACKAGE "oniguruma"
@@ -1084,6 +1300,106 @@ hunter_final_config(
     VERSION "0.13.4"
 )
 hunter_final_config(
+    PACKAGE "pcre2"
+    VERSION "10.13-p0"
+)
+hunter_final_config(
+    PACKAGE "pegtl"
+    VERSION "2.8.1"
+)
+hunter_final_config(
+    PACKAGE "pip_GitPython"
+    VERSION "2.1.11"
+)
+hunter_final_config(
+    PACKAGE "pip_astroid"
+    VERSION "2.2.5"
+)
+hunter_final_config(
+    PACKAGE "pip_boto3"
+    VERSION "1.9.130"
+)
+hunter_final_config(
+    PACKAGE "pip_botocore"
+    VERSION "1.12.130"
+)
+hunter_final_config(
+    PACKAGE "pip_certifi"
+    VERSION "2019.3.9"
+)
+hunter_final_config(
+    PACKAGE "pip_chardet"
+    VERSION "3.0.4"
+)
+hunter_final_config(
+    PACKAGE "pip_cpplint"
+    VERSION "1.4.4"
+)
+hunter_final_config(
+    PACKAGE "pip_decorator"
+    VERSION "4.4.0"
+)
+hunter_final_config(
+    PACKAGE "pip_gitdb"
+    VERSION "2.0.5"
+)
+hunter_final_config(
+    PACKAGE "pip_idna"
+    VERSION "2.8"
+)
+hunter_final_config(
+    PACKAGE "pip_jmespath"
+    VERSION "0.9.4"
+)
+hunter_final_config(
+    PACKAGE "pip_lazy-object-proxy"
+    VERSION "1.3.1"
+)
+hunter_final_config(
+    PACKAGE "pip_nose"
+    VERSION "1.3.7"
+)
+hunter_final_config(
+    PACKAGE "pip_nose-timer"
+    VERSION "0.7.5"
+)
+hunter_final_config(
+    PACKAGE "pip_numpy"
+    VERSION "1.16.2"
+)
+hunter_final_config(
+    PACKAGE "pip_pylint"
+    VERSION "2.3.1"
+)
+hunter_final_config(
+    PACKAGE "pip_python-dateutil"
+    VERSION "2.8.0"
+)
+hunter_final_config(
+    PACKAGE "pip_requests"
+    VERSION "2.21.0"
+)
+hunter_final_config(
+    PACKAGE "pip_six"
+    VERSION "1.12.0"
+)
+hunter_final_config(
+    PACKAGE "pip_smmap"
+    VERSION "2.0.5"
+)
+hunter_final_config(
+    PACKAGE "pip_urllib3"
+    VERSION "1.24.1"
+)
+hunter_final_config(
+    PACKAGE "pip_wrapt"
+    VERSION "1.11.1"
+)
+hunter_final_config(
+    PACKAGE "pluginlib"
+    VERSION "1.12.1-p0"
+)
+hunter_final_config(
     PACKAGE "poly2tri"
     VERSION "1.0.0"
 )
@@ -1096,12 +1412,16 @@ hunter_final_config(
     VERSION "1.0"
 )
 hunter_final_config(
+    PACKAGE "prometheus-cpp"
+    VERSION "0.6.0-p2"
+)
+hunter_final_config(
     PACKAGE "protobuf-c"
     VERSION "1.3.0-p1"
 )
 hunter_final_config(
     PACKAGE "pthread-stubs"
-    VERSION "0.3"
+    VERSION "0.4"
 )
 hunter_final_config(
     PACKAGE "pugixml"
@@ -1110,6 +1430,14 @@ hunter_final_config(
 hunter_final_config(
     PACKAGE "pybind11"
     VERSION "2.2.4"
+)
+hunter_final_config(
+    PACKAGE "qhull"
+    VERSION "7.2.0-p1"
+)
+hunter_final_config(
+    PACKAGE "quickjs"
+    VERSION "2019-07-21-p0"
 )
 hunter_final_config(
     PACKAGE "rabbitmq-c"
@@ -1124,12 +1452,20 @@ hunter_final_config(
     VERSION "1.3.2"
 )
 hunter_final_config(
+    PACKAGE "rang"
+    VERSION "3.1.0-p0"
+)
+hunter_final_config(
     PACKAGE "range-v3"
-    VERSION "0.3.0-p"
+    VERSION "0.5.0"
 )
 hunter_final_config(
     PACKAGE "re2"
     VERSION "2017.11.01-p0"
+)
+hunter_final_config(
+    PACKAGE "readline"
+    VERSION "6.3"
 )
 hunter_final_config(
     PACKAGE "recastnavigation"
@@ -1145,7 +1481,11 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "ros"
-    VERSION "1.14.4-p0"
+    VERSION "1.14.6-p0"
+)
+hunter_final_config(
+    PACKAGE "ros_comm"
+    VERSION "1.14.3-p1"
 )
 hunter_final_config(
     PACKAGE "ros_comm_msgs"
@@ -1153,19 +1493,19 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "ros_common_msgs"
-    VERSION "1.12.6-p0"
+    VERSION "1.12.7-p0"
 )
 hunter_final_config(
     PACKAGE "ros_console_bridge"
-    VERSION "0.4.0-p0"
+    VERSION "0.4.3-p0"
 )
 hunter_final_config(
     PACKAGE "ros_environment"
-    VERSION "1.2.0-p0"
+    VERSION "1.2.1-p0"
 )
 hunter_final_config(
     PACKAGE "ros_gencpp"
-    VERSION "0.6.0-p0"
+    VERSION "0.6.2-p0"
 )
 hunter_final_config(
     PACKAGE "ros_geneus"
@@ -1177,7 +1517,7 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "ros_genmsg"
-    VERSION "0.5.10-p0"
+    VERSION "0.5.12-p0"
 )
 hunter_final_config(
     PACKAGE "ros_gennodejs"
@@ -1185,7 +1525,7 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "ros_genpy"
-    VERSION "0.6.7-p0"
+    VERSION "0.6.8-p0"
 )
 hunter_final_config(
     PACKAGE "ros_message_generation"
@@ -1197,23 +1537,47 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "ros_std_msgs"
-    VERSION "0.5.11-p1"
+    VERSION "0.5.12-p0"
+)
+hunter_final_config(
+    PACKAGE "rosconsole"
+    VERSION "1.13.10-p0"
 )
 hunter_final_config(
     PACKAGE "roscpp_core"
-    VERSION "0.6.9-p0"
+    VERSION "0.6.12-p0"
 )
 hunter_final_config(
     PACKAGE "rospack"
-    VERSION "2.5.0-p0"
+    VERSION "2.5.3-p0"
+)
+hunter_final_config(
+    PACKAGE "s3"
+    VERSION "0.0.0-287e4be-p1"
 )
 hunter_final_config(
     PACKAGE "sds"
     VERSION "2.0.0"
 )
 hunter_final_config(
+    PACKAGE "sentencepiece"
+    VERSION "0.1.8-p1"
+)
+hunter_final_config(
+    PACKAGE "shaka_player_embedded"
+    VERSION "0.1.0-beta-p1"
+)
+hunter_final_config(
+    PACKAGE "sleef"
+    VERSION "3.3.1-p1"
+)
+hunter_final_config(
     PACKAGE "sm"
-    VERSION "1.2.1"
+    VERSION "1.2.3"
+)
+hunter_final_config(
+    PACKAGE "soil"
+    VERSION "1.0.4"
 )
 hunter_final_config(
     PACKAGE "sources_for_android_sdk_packer"
@@ -1225,11 +1589,15 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "spdlog"
-    VERSION "0.16.3-p1"
+    VERSION "1.3.1-p0"
+)
+hunter_final_config(
+    PACKAGE "spirv-cross"
+    VERSION "20190220"
 )
 hunter_final_config(
     PACKAGE "sqlite3"
-    VERSION "3.24.0-p0"
+    VERSION "3.27.2-p0"
 )
 hunter_final_config(
     PACKAGE "sse2neon"
@@ -1245,7 +1613,7 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "stb"
-    VERSION "0.0.1"
+    VERSION "0.0.0-e6afb9c-p0"
 )
 hunter_final_config(
     PACKAGE "stdext-path"
@@ -1268,8 +1636,24 @@ hunter_final_config(
     VERSION "3.2.0-h1"
 )
 hunter_final_config(
+    PACKAGE "taocpp-json"
+    VERSION "1.0.0-beta.11-e0895587"
+)
+hunter_final_config(
     PACKAGE "tcl"
     VERSION "core8.6.8"
+)
+hunter_final_config(
+    PACKAGE "termcolor"
+    VERSION "1.0.0"
+)
+hunter_final_config(
+    PACKAGE "tf"
+    VERSION "1.12.0-p0"
+)
+hunter_final_config(
+    PACKAGE "tf2"
+    VERSION "0.6.5-p0"
 )
 hunter_final_config(
     PACKAGE "thread-pool-cpp"
@@ -1277,7 +1661,7 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "thrift"
-    VERSION "0.11.0-p0"
+    VERSION "0.12.0-p0"
 )
 hunter_final_config(
     PACKAGE "tinydir"
@@ -1286,6 +1670,10 @@ hunter_final_config(
 hunter_final_config(
     PACKAGE "tinyxml2"
     VERSION "6.2.0-p1"
+)
+hunter_final_config(
+    PACKAGE "tmxparser"
+    VERSION "2.1.0-ab4125b-p1"
 )
 hunter_final_config(
     PACKAGE "toluapp"
@@ -1300,12 +1688,32 @@ hunter_final_config(
     VERSION "1.0.1-p0"
 )
 hunter_final_config(
+    PACKAGE "tvm"
+    VERSION "0.5-a4bc50e-p0"
+)
+hunter_final_config(
     PACKAGE "type_safe"
-    VERSION "0.2-p1"
+    VERSION "0.2.1-p2"
+)
+hunter_final_config(
+    PACKAGE "units"
+    VERSION "2.3.1"
+)
+hunter_final_config(
+    PACKAGE "utf8"
+    VERSION "2.3.4-p1"
 )
 hunter_final_config(
     PACKAGE "util_linux"
     VERSION "2.30.1"
+)
+hunter_final_config(
+    PACKAGE "v8"
+    VERSION "7.4.98-p3"
+)
+hunter_final_config(
+    PACKAGE "vectorial"
+    VERSION "0.0.0-ae7dc88-p0"
 )
 hunter_final_config(
     PACKAGE "vorbis"
@@ -1316,20 +1724,28 @@ hunter_final_config(
     VERSION "0.8.1-p0"
 )
 hunter_final_config(
+    PACKAGE "wt"
+    VERSION "4.0.4-p0"
+)
+hunter_final_config(
     PACKAGE "wxWidgets"
     VERSION "3.0.2"
 )
 hunter_final_config(
+    PACKAGE "wyrm"
+    VERSION "0.1.0"
+)
+hunter_final_config(
     PACKAGE "x11"
-    VERSION "1.5.0"
+    VERSION "1.6.7"
 )
 hunter_final_config(
     PACKAGE "x264"
-    VERSION "snapshot-20170420-2245"
+    VERSION "snapshot-20190513-2245"
 )
 hunter_final_config(
     PACKAGE "xau"
-    VERSION "1.0.7"
+    VERSION "1.0.9"
 )
 hunter_final_config(
     PACKAGE "xcb"
@@ -1353,7 +1769,7 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "xextproto"
-    VERSION "7.2.1"
+    VERSION "7.3.0"
 )
 hunter_final_config(
     PACKAGE "xf86vidmodeproto"
@@ -1361,7 +1777,7 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "xfixes"
-    VERSION "5.0.1"
+    VERSION "5.0.3"
 )
 hunter_final_config(
     PACKAGE "xgboost"
@@ -1381,11 +1797,11 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "xorg-macros"
-    VERSION "1.17"
+    VERSION "1.19.2"
 )
 hunter_final_config(
     PACKAGE "xproto"
-    VERSION "7.0.23"
+    VERSION "7.0.31"
 )
 hunter_final_config(
     PACKAGE "xrandr"
@@ -1401,15 +1817,23 @@ hunter_final_config(
 )
 hunter_final_config(
     PACKAGE "xtrans"
-    VERSION "1.2.7"
+    VERSION "1.4.0"
 )
 hunter_final_config(
     PACKAGE "xxf86vm"
     VERSION "1.1.2"
 )
 hunter_final_config(
+    PACKAGE "xxhash"
+    VERSION "0.6.5-p0"
+)
+hunter_final_config(
     PACKAGE "yaml-cpp"
-    VERSION "0.5.3-p4"
+    VERSION "0.6.2-0f9a586-p1"
+)
+hunter_final_config(
+    PACKAGE "zip"
+    VERSION "0.1.15"
 )
 hunter_final_config(
     PACKAGE "zookeeper"

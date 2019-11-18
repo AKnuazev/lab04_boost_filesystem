@@ -111,9 +111,9 @@ Predefined macroses:
 #define __GCC_IEC_559_COMPLEX 2
 #define __GLIBCXX_BITSIZE_INT_N_0 128
 #define __GLIBCXX_TYPE_INT_N_0 __int128
-#define __GLIBCXX__ 20190503
+#define __GLIBCXX__ 20190812
 #define __GLIBC__ 2
-#define __GNUC_MINOR__ 1
+#define __GNUC_MINOR__ 2
 #define __GNUC_PATCHLEVEL__ 0
 #define __GNUC_STDC_INLINE__ 1
 #define __GNUC__ 9
@@ -259,7 +259,7 @@ Predefined macroses:
 #define __UINT_LEAST8_MAX__ 0xff
 #define __UINT_LEAST8_TYPE__ unsigned char
 #define __USER_LABEL_PREFIX__ 
-#define __VERSION__ "9.1.0"
+#define __VERSION__ "9.2.0"
 #define __WCHAR_MAX__ 0x7fffffff
 #define __WCHAR_MIN__ (-0x7fffffff - 1)
 #define __WCHAR_TYPE__ int

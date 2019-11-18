@@ -1,15 +1,36 @@
-/opt/clion-2019.2.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE= -G "CodeBlocks - Unix Makefiles" /home/anton/AKnuazev/labs/lab03_shared_ptr
+/opt/clion-2019.2.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE= -G "CodeBlocks - Unix Makefiles" /home/anton/AKnuazev/labs/lab04_boost_filesystem
+-- The C compiler identification is GNU 9.2.0
+-- The CXX compiler identification is GNU 9.2.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
 -- [hunter] Calculating Toolchain-SHA1
 -- [hunter] Calculating Config-SHA1
 -- [hunter] HUNTER_ROOT: /home/anton/.hunter
--- [hunter] [ Hunter-ID: 70287b1 | Toolchain-ID: 169c9bc | Config-ID: b8f46c4 ]
--- [hunter] GTEST_ROOT: /home/anton/.hunter/_Base/70287b1/169c9bc/b8f46c4/Install (ver.: 1.8.1)
+-- [hunter] [ Hunter-ID: 9a3594a | Toolchain-ID: bcfb592 | Config-ID: 48401e9 ]
+-- [hunter] BOOST_ROOT: /home/anton/.hunter/_Base/9a3594a/bcfb592/48401e9/Install (ver.: 1.70.0-p0)
+-- [hunter] BOOST_ROOT: /home/anton/.hunter/_Base/9a3594a/bcfb592/48401e9/Install (ver.: 1.70.0-p0)
+-- Boost version: 1.70.0
+-- Found the following Boost libraries:
+--   filesystem
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
 -- Configuring done
-CMake Error at CMakeLists.txt:37 (add_executable):
-  Target "tests" links to target "GTest::main" but the target was not found.
-  Perhaps a find_package() call is missing for an IMPORTED target, or an
-  ALIAS target is missing?
-
-
 -- Generating done
--- Build files have been written to: /home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default
+-- Build files have been written to: /home/anton/AKnuazev/labs/lab04_boost_filesystem/cmake-build-default

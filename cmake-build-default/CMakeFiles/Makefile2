@@ -59,156 +59,82 @@ RM = /opt/clion-2019.2.2/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anton/AKnuazev/labs/lab03_shared_ptr
+CMAKE_SOURCE_DIR = /home/anton/AKnuazev/labs/lab04_boost_filesystem
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default
+CMAKE_BINARY_DIR = /home/anton/AKnuazev/labs/lab04_boost_filesystem/cmake-build-default
 
 #=============================================================================
-# Target rules for target CMakeFiles/tests.dir
+# Target rules for target CMakeFiles/FTPFilesAnalyzerSources.dir
 
 # All Build rule for target.
-CMakeFiles/tests.dir/all: CMakeFiles/sharedPtr.dir/all
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles --progress-num=7,8,9 "Built target tests"
-.PHONY : CMakeFiles/tests.dir/all
+CMakeFiles/FTPFilesAnalyzerSources.dir/all:
+	$(MAKE) -f CMakeFiles/FTPFilesAnalyzerSources.dir/build.make CMakeFiles/FTPFilesAnalyzerSources.dir/depend
+	$(MAKE) -f CMakeFiles/FTPFilesAnalyzerSources.dir/build.make CMakeFiles/FTPFilesAnalyzerSources.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anton/AKnuazev/labs/lab04_boost_filesystem/cmake-build-default/CMakeFiles --progress-num=3,4 "Built target FTPFilesAnalyzerSources"
+.PHONY : CMakeFiles/FTPFilesAnalyzerSources.dir/all
 
 # Include target in all.
-all: CMakeFiles/tests.dir/all
+all: CMakeFiles/FTPFilesAnalyzerSources.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles 5
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles 0
-.PHONY : CMakeFiles/tests.dir/rule
+CMakeFiles/FTPFilesAnalyzerSources.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab04_boost_filesystem/cmake-build-default/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/FTPFilesAnalyzerSources.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab04_boost_filesystem/cmake-build-default/CMakeFiles 0
+.PHONY : CMakeFiles/FTPFilesAnalyzerSources.dir/rule
 
 # Convenience name for target.
-tests: CMakeFiles/tests.dir/rule
+FTPFilesAnalyzerSources: CMakeFiles/FTPFilesAnalyzerSources.dir/rule
 
-.PHONY : tests
-
-# clean rule for target.
-CMakeFiles/tests.dir/clean:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/clean
-.PHONY : CMakeFiles/tests.dir/clean
+.PHONY : FTPFilesAnalyzerSources
 
 # clean rule for target.
-clean: CMakeFiles/tests.dir/clean
+CMakeFiles/FTPFilesAnalyzerSources.dir/clean:
+	$(MAKE) -f CMakeFiles/FTPFilesAnalyzerSources.dir/build.make CMakeFiles/FTPFilesAnalyzerSources.dir/clean
+.PHONY : CMakeFiles/FTPFilesAnalyzerSources.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/FTPFilesAnalyzerSources.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/SharedPtr.dir
+# Target rules for target CMakeFiles/FTPFilesAnalyzerMain.dir
 
 # All Build rule for target.
-CMakeFiles/SharedPtr.dir/all:
-	$(MAKE) -f CMakeFiles/SharedPtr.dir/build.make CMakeFiles/SharedPtr.dir/depend
-	$(MAKE) -f CMakeFiles/SharedPtr.dir/build.make CMakeFiles/SharedPtr.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles --progress-num=1,2 "Built target SharedPtr"
-.PHONY : CMakeFiles/SharedPtr.dir/all
+CMakeFiles/FTPFilesAnalyzerMain.dir/all: CMakeFiles/FTPFilesAnalyzerSources.dir/all
+	$(MAKE) -f CMakeFiles/FTPFilesAnalyzerMain.dir/build.make CMakeFiles/FTPFilesAnalyzerMain.dir/depend
+	$(MAKE) -f CMakeFiles/FTPFilesAnalyzerMain.dir/build.make CMakeFiles/FTPFilesAnalyzerMain.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anton/AKnuazev/labs/lab04_boost_filesystem/cmake-build-default/CMakeFiles --progress-num=1,2 "Built target FTPFilesAnalyzerMain"
+.PHONY : CMakeFiles/FTPFilesAnalyzerMain.dir/all
 
 # Include target in all.
-all: CMakeFiles/SharedPtr.dir/all
+all: CMakeFiles/FTPFilesAnalyzerMain.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/SharedPtr.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/SharedPtr.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles 0
-.PHONY : CMakeFiles/SharedPtr.dir/rule
+CMakeFiles/FTPFilesAnalyzerMain.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab04_boost_filesystem/cmake-build-default/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/FTPFilesAnalyzerMain.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab04_boost_filesystem/cmake-build-default/CMakeFiles 0
+.PHONY : CMakeFiles/FTPFilesAnalyzerMain.dir/rule
 
 # Convenience name for target.
-SharedPtr: CMakeFiles/SharedPtr.dir/rule
+FTPFilesAnalyzerMain: CMakeFiles/FTPFilesAnalyzerMain.dir/rule
 
-.PHONY : SharedPtr
-
-# clean rule for target.
-CMakeFiles/SharedPtr.dir/clean:
-	$(MAKE) -f CMakeFiles/SharedPtr.dir/build.make CMakeFiles/SharedPtr.dir/clean
-.PHONY : CMakeFiles/SharedPtr.dir/clean
+.PHONY : FTPFilesAnalyzerMain
 
 # clean rule for target.
-clean: CMakeFiles/SharedPtr.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/sharedPtr.dir
-
-# All Build rule for target.
-CMakeFiles/sharedPtr.dir/all:
-	$(MAKE) -f CMakeFiles/sharedPtr.dir/build.make CMakeFiles/sharedPtr.dir/depend
-	$(MAKE) -f CMakeFiles/sharedPtr.dir/build.make CMakeFiles/sharedPtr.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles --progress-num=5,6 "Built target sharedPtr"
-.PHONY : CMakeFiles/sharedPtr.dir/all
-
-# Include target in all.
-all: CMakeFiles/sharedPtr.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/sharedPtr.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/sharedPtr.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles 0
-.PHONY : CMakeFiles/sharedPtr.dir/rule
-
-# Convenience name for target.
-sharedPtr: CMakeFiles/sharedPtr.dir/rule
-
-.PHONY : sharedPtr
+CMakeFiles/FTPFilesAnalyzerMain.dir/clean:
+	$(MAKE) -f CMakeFiles/FTPFilesAnalyzerMain.dir/build.make CMakeFiles/FTPFilesAnalyzerMain.dir/clean
+.PHONY : CMakeFiles/FTPFilesAnalyzerMain.dir/clean
 
 # clean rule for target.
-CMakeFiles/sharedPtr.dir/clean:
-	$(MAKE) -f CMakeFiles/sharedPtr.dir/build.make CMakeFiles/sharedPtr.dir/clean
-.PHONY : CMakeFiles/sharedPtr.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/sharedPtr.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/main.dir
-
-# All Build rule for target.
-CMakeFiles/main.dir/all: CMakeFiles/SharedPtr.dir/all
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles --progress-num=3,4 "Built target main"
-.PHONY : CMakeFiles/main.dir/all
-
-# Include target in all.
-all: CMakeFiles/main.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles 0
-.PHONY : CMakeFiles/main.dir/rule
-
-# Convenience name for target.
-main: CMakeFiles/main.dir/rule
-
-.PHONY : main
-
-# clean rule for target.
-CMakeFiles/main.dir/clean:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
-.PHONY : CMakeFiles/main.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/main.dir/clean
+clean: CMakeFiles/FTPFilesAnalyzerMain.dir/clean
 
 .PHONY : clean
 

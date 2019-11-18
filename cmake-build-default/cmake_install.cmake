@@ -1,4 +1,4 @@
-# Install script for directory: /home/anton/AKnuazev/labs/lab03_shared_ptr
+# Install script for directory: /home/anton/AKnuazev/labs/lab04_boost_filesystem
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/anton/AKnuazev/labs/lab04_boost_filesystem/cmake-build-default/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

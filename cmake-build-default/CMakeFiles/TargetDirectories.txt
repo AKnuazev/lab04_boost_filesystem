@@ -1,7 +1,4 @@
-/home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles/rebuild_cache.dir
-/home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles/tests.dir
-/home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles/SharedPtr.dir
-/home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles/sharedPtr.dir
-/home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles/main.dir
-/home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles/edit_cache.dir
-/home/anton/AKnuazev/labs/lab03_shared_ptr/cmake-build-default/CMakeFiles/test.dir
+/home/anton/AKnuazev/labs/lab04_boost_filesystem/cmake-build-default/CMakeFiles/rebuild_cache.dir
+/home/anton/AKnuazev/labs/lab04_boost_filesystem/cmake-build-default/CMakeFiles/FTPFilesAnalyzerSources.dir
+/home/anton/AKnuazev/labs/lab04_boost_filesystem/cmake-build-default/CMakeFiles/edit_cache.dir
+/home/anton/AKnuazev/labs/lab04_boost_filesystem/cmake-build-default/CMakeFiles/FTPFilesAnalyzerMain.dir
