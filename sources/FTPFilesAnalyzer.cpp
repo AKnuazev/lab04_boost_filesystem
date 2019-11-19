@@ -63,14 +63,10 @@ FinancialFile FTPFilesAnalyzer::parce_filename(std::string filename)
 void FTPFilesAnalyzer::start_passage(fs::path path)
 {
 	for (fs::directory_entry dir_iter : fs::directory_iterator{ path })
-	{
-		fs::path current_path = fs::canonical(dir_iter);
-		
-		if (fs::is_regular_file(current_path))
-			analyze_file(current_path);
-		else if (fs::is_directory(current_path))
-			analyze_dir(current_path);
-	}
+	    if (fs::is_regular_file(dir_iter))
+            analyze_file(dir_iter);
+        else if (fs::is_directory(dir_iter))
+            analyze_dir(dir_iter);
 
 	if (directories.size() > 0)
 		directories.pop_back();

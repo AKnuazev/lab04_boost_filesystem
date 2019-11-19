@@ -16,5 +16,4 @@ int main()
 	std::cout << "_________________________________________________________________" << std::endl;
 	analyzer.print_account_groups_info();
 	std::cout << std::endl << std::endl;
-
 }
